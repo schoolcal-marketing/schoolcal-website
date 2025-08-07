@@ -20,7 +20,7 @@ export default function Footer() {
               />
             </div>
             <p className="body-medium text-background-white/80 mb-6 max-w-md">
-              Sync SIS schedules to staff and students' primary calendars
+              Connect your calendars, connect your school.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-background-white/60 hover:text-primary transition-colors">
@@ -90,18 +90,10 @@ export default function Footer() {
         </div>
 
         {/* Bottom Section */}
-        <div className="border-t border-background-white/20 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+        <div className="border-t border-background-white/20 mt-12 pt-8 flex justify-center">
           <p className="body-small text-background-white/60">
-            © 2024 SchoolCal. All rights reserved.
+            © 2025 SchoolCal. All rights reserved.
           </p>
-          <div className="flex space-x-6 mt-4 md:mt-0">
-            <Link href="/privacy" className="body-small text-background-white/60 hover:text-primary transition-colors">
-              Privacy Policy
-            </Link>
-            <Link href="/terms" className="body-small text-background-white/60 hover:text-primary transition-colors">
-              Terms of Service
-            </Link>
-          </div>
         </div>
       </div>
     </footer>

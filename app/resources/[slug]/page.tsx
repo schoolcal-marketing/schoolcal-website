@@ -79,8 +79,9 @@ export async function generateStaticParams() {
 }
 
 // Generate metadata for dynamic pages
-export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   try {
+    const { slug } = await params;
     const article = await sanityClient.fetch(`
       *[_type == "article" && slug.current == $slug][0] {
         title,
@@ -91,7 +92,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
           }
         }
       }
-    `, { slug: params.slug })
+    `, { slug })
 
     if (!article) {
       return {
@@ -208,8 +209,9 @@ const components = {
   },
 };
 
-export default async function ArticlePage({ params }: { params: { slug: string } }) {
-  const article = await getArticle(params.slug);
+export default async function ArticlePage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const article = await getArticle(slug);
 
   if (!article) {
     notFound();

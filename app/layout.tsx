@@ -15,6 +15,11 @@ export const metadata: Metadata = {
   title: "SchoolCal - Sync SIS schedules to staff & student calendars",
   description: "Sync SIS schedules to staff and students' primary (personal) calendars, so they can see real-time availability, avoid scheduling conflicts, and book meetings instantly.",
   authors: [{ name: "SchoolCal Team" }],
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
+    apple: '/favicon.ico',
+  },
   openGraph: {
     title: "SchoolCal - Sync SIS schedules to staff & student calendars",
     description: "Sync SIS schedules to staff and students' primary (personal) calendars, so they can see real-time availability, avoid scheduling conflicts, and book meetings instantly.",

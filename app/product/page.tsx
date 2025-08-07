@@ -1,188 +1,133 @@
 import { Metadata } from 'next'
-import RotatingLogo from "./components/RotatingLogo";
 import Image from "next/image";
-import ToggleSection from "./components/ToggleSection";
-import PersonasSection from "./components/PersonasSection";
 
 export const metadata: Metadata = {
-  title: 'SchoolCal - Sync SIS Schedules to Staff & Student Calendars',
-  description: 'Sync your SIS schedules to staff and students\' primary calendars. See real-time availability, avoid scheduling conflicts, and book meetings instantly. Works with Veracross, Powerschool, and Blackbaud.',
+  title: 'Learn How SchoolCal Works in 3 Min| SchoolCal',
+  description: 'Watch how SchoolCal syncs your SIS schedules to staff and students\' primary calendars.',
   openGraph: {
-    title: 'SchoolCal - Sync SIS Schedules to Staff & Student Calendars',
-    description: 'Sync your SIS schedules to staff and students\' primary calendars. See real-time availability, avoid scheduling conflicts, and book meetings instantly.',
+    title: 'Product - SchoolCal SIS Calendar Sync Solution',
+    description: 'Discover how SchoolCal seamlessly syncs your SIS schedules to staff and students\' primary calendars.',
     type: 'website',
-    url: 'https://schoolcal.com',
-    images: [
-      {
-        url: 'https://schoolcal.com/images/homepage-hero.png',
-        width: 1200,
-        height: 800,
-        alt: 'SchoolCal calendar interface showing schedule management and availability features',
-      },
-    ],
+    url: 'https://schoolcal.com/product',
   },
   alternates: {
-    canonical: 'https://schoolcal.com',
+    canonical: 'https://schoolcal.com/product',
   },
 }
 
-export default function Home() {
+export default function ProductPage() {
   return (
-    <div className="min-h-screen">
-      {/* Hero Section */}
-      <section className="bg-background-cream py-20 lg:py-32">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h1 className="heading-display text-text-black mb-6">
-              Sync schedules
-              <div className="flex flex-col items-center gap-2 sm:flex-row sm:items-baseline sm:justify-center sm:gap-2 mt-4">
-                <span className="inline-flex items-center gap-2">
-                  from
-                  <RotatingLogo
-                    logos={[
-                      { src: "/logos/sis-veracross.png", alt: "Veracross" },
-                      { src: "/logos/sis-powerschool.png", alt: "Powerschool" },
-                      { src: "/logos/sis-blackbaud.png", alt: "Blackbaud" },
-                    ]}
-                    className="mx-2"
-                  />
-                </span>
-                <span className="inline-flex items-center gap-2">
-                  to
-                  <RotatingLogo
-                    logos={[
-                      { src: "/logos/calendar-google.png", alt: "Google Calendar" },
-                      { src: "/logos/calendar-outlook.png", alt: "Outlook" },
-                    ]}
-                    className="mx-2"
-                    startDelay={1200}
-                  />
-                </span>
-              </div>
-            </h1>
-            <p className="body-large text-text-dark-blue mb-8 max-w-2xl mx-auto">
-              Sync SIS schedules to staff and students' primary calendars, so they can <strong>see real-time availability</strong>, <strong>avoid scheduling conflicts</strong>, and <strong>book meetings instantly</strong> – instead of seeing blank calendars and playing scheduling tag.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-              <a 
-                href="/signup" 
-                className="bg-primary text-white px-8 py-4 rounded-lg hover:bg-primary-dark transition-all duration-300 hover:scale-105 active:scale-95 font-medium body-large shadow-lg hover:shadow-xl"
-              >
-                Book a Demo
-              </a>
-            </div>
-            
-            {/* Calendar Interface Image */}
-            <div className="max-w-4xl mx-auto">
-              <div className="relative">
-                <Image
-                  src="/images/homepage-hero.png"
-                  alt="SchoolCal calendar interface showing schedule management and availability features"
-                  width={1200}
-                  height={800}
-                  className="w-full h-auto rounded-lg shadow-2xl"
-                  priority
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Customer Logos Section */}
-      <section className="py-16 bg-background-cream">
+    <div className="min-h-screen bg-background-white">
+      {/* Product Hero Section */}
+      <section className="bg-background-cream py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="heading-2 text-text-black mb-4">
-              Streamlining scheduling at public & private schools like...
-            </h2>
+            <h1 className="heading-1 text-text-black mb-6">
+              Learn how SchoolCal works in under 3 minutes
+            </h1>
           </div>
           
-          {/* Logo Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 items-center justify-items-center">
-            {/* Customer Logo 1 */}
-            <div className="w-40 h-20 bg-background-white rounded-lg flex items-center justify-center border border-border shadow-sm p-4">
-              <Image
-                src="/logos/customer-breck.png"
-                alt="Customer school logo"
-                width={140}
-                height={56}
-                className="max-w-full max-h-full object-contain"
+          {/* Loom Video Embed */}
+          <div className="max-w-4xl mx-auto mb-12">
+            <div style={{ position: 'relative', paddingBottom: '56.308654848800835%', height: 0 }}>
+              <iframe 
+                src="https://www.loom.com/embed/1ffe283095fd48c48c9d3744b3fea1ee?sid=420c19e6-6dd2-4fe8-b30f-7e66fac4a33d" 
+                frameBorder="0" 
+                allowFullScreen 
+                style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
               />
             </div>
-            
-            {/* Customer Logo 2 */}
-            <div className="w-40 h-20 bg-background-white rounded-lg flex items-center justify-center border border-border shadow-sm p-4">
-              <Image
-                src="/logos/customer-hotchkiss.png"
-                alt="Customer school logo"
-                width={140}
-                height={56}
-                className="max-w-full max-h-full object-contain"
-              />
-            </div>
-            
-            {/* Customer Logo 3 */}
-            <div className="w-40 h-20 bg-background-white rounded-lg flex items-center justify-center border border-border shadow-sm p-4">
-              <Image
-                src="/logos/customer-new-trier.png"
-                alt="Customer school logo"
-                width={140}
-                height={56}
-                className="max-w-full max-h-full object-contain"
-              />
-            </div>
-            
-            {/* Customer Logo 4 */}
-            <div className="w-40 h-20 bg-background-white rounded-lg flex items-center justify-center border border-border shadow-sm p-4">
-              <Image
-                src="/logos/customer-poly-prep.png"
-                alt="Customer school logo"
-                width={140}
-                height={56}
-                className="max-w-full max-h-full object-contain"
-              />
-            </div>
-            
-            {/* Customer Logo 5 */}
-            <div className="w-40 h-20 bg-background-white rounded-lg flex items-center justify-center border border-border shadow-sm p-4">
-              <Image
-                src="/logos/customer-ravenscroft.png"
-                alt="Customer school logo"
-                width={140}
-                height={56}
-                className="max-w-full max-h-full object-contain"
-              />
-            </div>
+          </div>
+
+          {/* CTA Button */}
+          <div className="text-center">
+            <a 
+              href="/demo" 
+              className="bg-primary text-white px-8 py-4 rounded-lg hover:bg-primary-dark transition-all duration-300 hover:scale-105 active:scale-95 font-medium body-large shadow-lg hover:shadow-xl inline-block"
+            >
+              Book a Demo
+            </a>
           </div>
         </div>
       </section>
 
-      {/* Before/After Toggle Section */}
-      <ToggleSection />
-
-      {/* Solution Section */}
-      <section className="py-20 bg-background-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="heading-2 text-text-black mb-6">
-              Fix calendar chaos for good
+      {/* Differentiation Section */}
+      <section className="bg-background-white py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="heading-2 text-text-black mb-4">
+              The only solution for real-time availability
             </h2>
             <p className="body-large text-text-dark-blue max-w-3xl mx-auto">
-              Most solutions sync events via iCal, which adds events to "overlay" or "secondary" calendars. This means the calendar user see they're busy, but nobody else can. SchoolCal uses Google & Outlook's native API to sync events to your staff's primary calendars. So events actually impact their free/busy status, and they can see each other's availability in real-time.
+              School operational excellence relies on the ability to see where people are, who's free, and who's busy. Only SchoolCal syncs schedules to users' primary (personal) calendars, so they can see real-time availability and others can book them.
             </p>
           </div>
           
-          {/* Solution Image */}
-          <div className="max-w-4xl mx-auto">
-            <div className="relative">
-              <Image
-                src="/images/diagram.png"
-                alt="SchoolCal solution diagram showing native API integration vs iCal overlay"
-                width={1200}
-                height={600}
-                className="w-full h-auto rounded-lg"
-              />
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            {/* Left Column - iCal & Overlay Calendars */}
+            <div className="bg-background-sand rounded-lg p-8">
+              <h3 className="heading-3 text-text-black mb-6">
+                With iCal & Overlay Calendars
+              </h3>
+              <ul className="space-y-4">
+                <li className="flex items-start">
+                  <div className="flex-shrink-0 w-6 h-6 bg-red-500 rounded-full flex items-center justify-center mr-3 mt-0.5">
+                    <span className="text-white text-sm font-bold">×</span>
+                  </div>
+                  <p className="body-medium text-text-dark-blue">
+                    Inconsistent sync times - if you change details or locations last minute, your attendees may show up at the wrong spot
+                  </p>
+                </li>
+                <li className="flex items-start">
+                  <div className="flex-shrink-0 w-6 h-6 bg-red-500 rounded-full flex items-center justify-center mr-3 mt-0.5">
+                    <span className="text-white text-sm font-bold">×</span>
+                  </div>
+                  <p className="body-medium text-text-dark-blue">
+                    Doesn't impact users' free/busy status - you can see your schedule, but others can't – leading to scheduling tag and double bookings.
+                  </p>
+                </li>
+                <li className="flex items-start">
+                  <div className="flex-shrink-0 w-6 h-6 bg-red-500 rounded-full flex items-center justify-center mr-3 mt-0.5">
+                    <span className="text-white text-sm font-bold">×</span>
+                  </div>
+                  <p className="body-medium text-text-dark-blue">
+                    Less granular filtering - you have less control over who you share with, and what metadata you display.
+                  </p>
+                </li>
+              </ul>
+            </div>
+
+            {/* Right Column - SchoolCal */}
+            <div className="bg-background-white rounded-lg p-8 border border-border shadow-sm">
+              <h3 className="heading-3 text-text-black mb-6">
+                With SchoolCal
+              </h3>
+              <ul className="space-y-4">
+                <li className="flex items-start">
+                  <div className="flex-shrink-0 w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mr-3 mt-0.5">
+                    <span className="text-white text-sm font-bold">✓</span>
+                  </div>
+                  <p className="body-medium text-text-dark-blue">
+                    Sync automatically, and on-demand - if events change last-minute, just push the change out on-demand
+                  </p>
+                </li>
+                <li className="flex items-start">
+                  <div className="flex-shrink-0 w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mr-3 mt-0.5">
+                    <span className="text-white text-sm font-bold">✓</span>
+                  </div>
+                  <p className="body-medium text-text-dark-blue">
+                    Show users' actual availability - sync events to users' primary (personal) calendars so they – and others – can see when they're actually free/busy.
+                  </p>
+                </li>
+                <li className="flex items-start">
+                  <div className="flex-shrink-0 w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mr-3 mt-0.5">
+                    <span className="text-white text-sm font-bold">✓</span>
+                  </div>
+                  <p className="body-medium text-text-dark-blue">
+                    Customize how events display - select who you want to sync to, and granular metadata you want to display so recipients have the details they need.
+                  </p>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -342,9 +287,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Personas Section */}
-      <PersonasSection />
-
       {/* CTA Section */}
       <section className="py-20 bg-primary">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -355,7 +297,7 @@ export default function Home() {
             Book a personalized demo, or watch a quick overview to see how it works.
           </p>
           <a 
-            href="/signup" 
+            href="/demo" 
             className="bg-white text-primary px-8 py-4 rounded-lg hover:bg-background-cream transition-all duration-300 hover:scale-105 active:scale-95 font-medium body-large shadow-lg hover:shadow-xl"
           >
             Book a Demo

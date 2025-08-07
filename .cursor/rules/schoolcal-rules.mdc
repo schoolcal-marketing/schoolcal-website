@@ -1,0 +1,11 @@
+---
+description: When considering the best approach for website architecture, or what libraries or tools to use
+alwaysApply: true
+---
+
+Always:
+
+- Ensure the website will use server side rendering for maximum LLM crawlability and SEO
+- Use Tailwind CSS for styling
+- If asked for update to the website brand/template globally, apply them in the Tailwind global styling (not just to one place)
+- Use Sanity for headless CMS

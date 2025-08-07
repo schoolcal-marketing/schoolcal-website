@@ -1,26 +1,271 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+  :root {
+    /* Brand Colors - SchoolCal Design System */
+    --primary: #FF895E;        /* Primary CTA, buttons, highlights */
+    --primary-dark: #e67a4e;   /* Darker shade for hover states */
+    --primary-light: #ff9a6e;  /* Lighter shade for subtle use */
+    
+    --secondary: #131B39;      /* Dark blue - main text color */
+    --secondary-dark: #0f152e; /* Darker shade */
+    --secondary-light: #1a2347; /* Lighter shade */
+    
+    /* Accent Colors */
+    --accent-sand: #F1DAA6;    /* Sand accent */
+    --accent-green: #55AC8C;   /* Green accent */
+    
+    /* Background Colors */
+    --background-white: #FFFFFF; /* Pure white */
+    --background-cream: #FFFEF4; /* Cream background */
+    --background-dark: #131B39;  /* Dark blue background */
+    --background-sand: #F1DAA6;  /* Sand background */
+    
+    /* Typography Colors */
+    --text-dark-blue: #1B1B1B;  /* Dark blue text */
+    --text-black: #131B39;      /* Black text */
+    
+    /* Neutral Colors */
+    --background: var(--background-white);
+    --foreground: var(--text-black);
+    --muted: var(--background-cream);
+    --muted-foreground: #6b7280;
+    
+    /* Status Colors */
+    --success: var(--accent-green);
+    --warning: var(--accent-sand);
+    --error: #ef4444;
+    --info: var(--primary);
+    
+    /* Border Colors */
+    --border: #e5e7eb;
+    --border-dark: #d1d5db;
+  
+      /* Typography */
+    --font-family-sans: var(--font-figtree), 'Figtree', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  
+  /* Font Sizes */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 3rem;
+  --text-6xl: 3.75rem;
+  
+  /* Font Weights */
+  --font-light: 300;
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+  --font-extrabold: 800;
 }
 
 @theme inline {
+  /* Color Mapping */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  
+  /* Primary Colors */
+  --color-primary: var(--primary);
+  --color-primary-dark: var(--primary-dark);
+  --color-primary-light: var(--primary-light);
+  
+  /* Secondary Colors */
+  --color-secondary: var(--secondary);
+  --color-secondary-dark: var(--secondary-dark);
+  --color-secondary-light: var(--secondary-light);
+  
+  /* Accent Colors */
+  --color-accent-sand: var(--accent-sand);
+  --color-accent-green: var(--accent-green);
+  
+  /* Background Colors */
+  --color-background-white: var(--background-white);
+  --color-background-cream: var(--background-cream);
+  --color-background-dark: var(--background-dark);
+  
+  /* Typography Colors */
+  --color-text-dark-blue: var(--text-dark-blue);
+  --color-text-black: var(--text-black);
+  
+  /* Neutral Colors */
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-error: var(--error);
+  --color-info: var(--info);
+  --color-border: var(--border);
+  --color-border-dark: var(--border-dark);
+  
+  /* Typography Mapping */
+  --font-sans: var(--font-family-sans);
+  --font-mono: var(--font-family-mono);
+  --font-serif: var(--font-family-serif);
+  
+  /* Font Size Mapping */
+  --text-xs: var(--text-xs);
+  --text-sm: var(--text-sm);
+  --text-base: var(--text-base);
+  --text-lg: var(--text-lg);
+  --text-xl: var(--text-xl);
+  --text-2xl: var(--text-2xl);
+  --text-3xl: var(--text-3xl);
+  --text-4xl: var(--text-4xl);
+  --text-5xl: var(--text-5xl);
+  --text-6xl: var(--text-6xl);
+  
+  /* Font Weight Mapping */
+  --font-light: var(--font-light);
+  --font-normal: var(--font-normal);
+  --font-medium: var(--font-medium);
+  --font-semibold: var(--font-semibold);
+  --font-bold: var(--font-bold);
+  --font-extrabold: var(--font-extrabold);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: var(--background-dark);
+    --foreground: var(--background-white);
+    --muted: var(--secondary);
+    --muted-foreground: var(--accent-sand);
+    --border: var(--secondary-light);
+    --border-dark: var(--secondary);
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-family-sans);
+  font-size: var(--text-base);
+  font-weight: var(--font-normal);
+  line-height: 1.6;
+  font-family: var(--font-figtree), 'Figtree', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+}
+
+/* Custom utility classes for your brand */
+.brand-gradient {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+}
+
+.brand-text-gradient {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Figtree Typography Utilities */
+.font-figtree {
+  font-family: var(--font-family-sans);
+}
+
+.heading-display {
+  font-family: var(--font-family-sans);
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.heading-1 {
+  font-family: var(--font-family-sans);
+  font-size: 3.5rem;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+.heading-2 {
+  font-family: var(--font-family-sans);
+  font-size: 2.25rem;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+}
+
+.heading-3 {
+  font-family: var(--font-family-sans);
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.body-large {
+  font-family: var(--font-family-sans);
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.body-medium {
+  font-family: var(--font-family-sans);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.body-small {
+  font-family: var(--font-family-sans);
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.caption {
+  font-family: var(--font-family-sans);
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1.4;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.marquee {
+  width: max-content;
+  animation: marquee 8s linear infinite;
+}
+
+/* Custom Animations */
+@keyframes bounce-subtle {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+@keyframes float-cursor {
+  0%, 100% {
+    transform: translateY(0) translateX(0);
+  }
+  25% {
+    transform: translateY(-2px) translateX(2px);
+  }
+  50% {
+    transform: translateY(-4px) translateX(0);
+  }
+  75% {
+    transform: translateY(-2px) translateX(-2px);
+  }
+}
+
+.animate-bounce-subtle {
+  animation: bounce-subtle 2s ease-in-out infinite;
+}
+
+.animate-float-cursor {
+  animation: float-cursor 3s ease-in-out infinite;
 }

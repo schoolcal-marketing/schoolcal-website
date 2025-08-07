@@ -1,0 +1,7 @@
+---
+alwaysApply: true
+---
+
+Every time you create a new static page, add the following meta data:
+
+Add metadata to all static pages. Include title, description, openGraph, and canonical

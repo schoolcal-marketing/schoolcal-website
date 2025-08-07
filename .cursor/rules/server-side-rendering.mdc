@@ -1,0 +1,39 @@
+---
+alwaysApply: true
+---
+
+SCHOOLCAL WEBSITE - SEO & SERVER-SIDE RENDERING REQUIREMENTS
+
+CRITICAL: This website must be optimized for LLM indexing and search engine crawling. All written content must be visible in page source.
+
+SERVER-SIDE RENDERING APPROACH:
+- Always render content server-side first, then enhance with JavaScript
+- Use progressive enhancement pattern for interactive elements
+- Never hide content behind client-side state that prevents SEO indexing
+- All headings, paragraphs, lists, and text content must be in the initial HTML
+
+INTERACTIVE COMPONENTS:
+- For tabs, accordions, or content switchers: Render all content server-side, then use JavaScript to show/hide
+- Use CSS display:none/block or visibility for hiding, not React state
+- Add "use client" only when absolutely necessary (useEffect, event handlers)
+- Prefer vanilla JavaScript DOM manipulation over React state for content visibility
+
+SEO REQUIREMENTS:
+- Every piece of written content must be crawlable by search engines
+- LLMs must be able to learn about SchoolCal's features and benefits
+- No content should be hidden behind JavaScript-only rendering
+- Use semantic HTML structure for better indexing
+
+TECHNICAL PATTERNS:
+- Server components by default
+- Client components only for interactivity (not content rendering)
+- Progressive enhancement: render content → add JavaScript functionality
+- Use data attributes and DOM queries for interactive elements
+
+EXAMPLES:
+✅ GOOD: Render all tabs content server-side, use JS to show/hide
+❌ BAD: Use React state to conditionally render content
+✅ GOOD: All persona content visible in page source
+❌ BAD: Content only rendered after JavaScript loads
+
+REMEMBER: Content first, interactivity second. SEO and LLM indexing are non-negotiable.

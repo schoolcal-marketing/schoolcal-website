@@ -65,7 +65,7 @@ export default function Home() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
               <a 
-                href="/signup" 
+                href="/demo" 
                 className="bg-primary text-white px-8 py-4 rounded-lg hover:bg-primary-dark transition-all duration-300 hover:scale-105 active:scale-95 font-medium body-large shadow-lg hover:shadow-xl"
               >
                 Book a Demo
@@ -355,7 +355,7 @@ export default function Home() {
             Book a personalized demo, or watch a quick overview to see how it works.
           </p>
           <a 
-            href="/signup" 
+            href="/demo" 
             className="bg-white text-primary px-8 py-4 rounded-lg hover:bg-background-cream transition-all duration-300 hover:scale-105 active:scale-95 font-medium body-large shadow-lg hover:shadow-xl"
           >
             Book a Demo

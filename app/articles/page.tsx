@@ -2,16 +2,16 @@ import { Metadata } from 'next'
 import sanityClient from '@/lib/sanity';
 
 export const metadata: Metadata = {
-  title: 'Calendar Resources | SchoolCal',
+  title: 'Articles | SchoolCal',
   description: 'Educational articles, guides, and insights to help you make the most of your school calendars.',
   openGraph: {
-    title: 'Resources - Educational Articles & Guides | SchoolCal',
+    title: 'Articles - Educational Content & Guides | SchoolCal',
     description: 'Educational articles, guides, and insights to help you make the most of SchoolCal.',
     type: 'website',
-    url: 'https://schoolcal.com/resources',
+    url: 'https://schoolcal.com/articles',
   },
   alternates: {
-    canonical: 'https://schoolcal.com/resources',
+    canonical: 'https://schoolcal.com/articles',
   },
 }
 
@@ -55,7 +55,7 @@ async function getArticles(): Promise<Article[]> {
   }
 }
 
-export default async function ResourcesPage() {
+export default async function ArticlesPage() {
   const articles = await getArticles();
 
   return (
@@ -65,7 +65,7 @@ export default async function ResourcesPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="heading-1 text-text-black mb-4">
-              Resources
+              Articles
             </h1>
             <p className="body-large text-text-dark-blue max-w-2xl mx-auto">
               Educational articles, guides, and insights to help you make the most of SchoolCal.

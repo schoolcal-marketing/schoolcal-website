@@ -86,6 +86,11 @@ export const staticPages: SitemapPage[] = [
     priority: 0.8,
   },
   {
+    url: '/articles',
+    changeFrequency: 'weekly',
+    priority: 0.8,
+  },
+  {
     url: '/demo',
     changeFrequency: 'monthly',
     priority: 0.9,
@@ -126,7 +131,7 @@ export const staticPages: SitemapPage[] = [
 // Sanity content types configuration
 export const sanityContentTypes = {
   article: {
-    baseUrl: '/resources',
+    baseUrl: '/articles',
     changeFrequency: 'monthly' as const,
     priority: 0.6,
   },

@@ -27,7 +27,7 @@ export default function Footer() {
                 <span className="sr-only">YouTube</span>
                 <Youtube className="w-6 h-6" />
               </a>
-              <a href="#" className="text-background-white/60 hover:text-primary transition-colors">
+              <a href="https://www.linkedin.com/company/schoolcal-apps/" className="text-background-white/60 hover:text-primary transition-colors">
                 <span className="sr-only">LinkedIn</span>
                 <Linkedin className="w-6 h-6" />
               </a>

@@ -34,6 +34,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={figtree.variable}>
+      <head>
+        {/* Fathom - beautiful, simple website analytics */}
+        <script src="https://cdn.usefathom.com/script.js" data-site="BCHGHOVK" defer></script>
+        {/* / Fathom */}
+      </head>
       <body className="font-sans min-h-screen flex flex-col">
         <Header />
         <main className="flex-1">

@@ -29,7 +29,7 @@ const representatives: Representative[] = [
   {
     name: "Garrett Sattazahn",
     firstName: "Garrett",
-    calendlyUrl: "https://calendly.com/garrett-sattazahn",
+    calendlyUrl: "https://calendly.com/garrett-sattazahn-schoolcal/",
     image: "/images/team/team-garrett.jpeg",
     usStates: [
       "Maine", "New Hampshire", "Vermont", "Massachusetts", "Rhode Island", 

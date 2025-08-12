@@ -30,7 +30,7 @@ export default function AboutPage() {
               School operations are complex, with lots of moving parts. Every day, you work with complex scheduling needs, coordinating stakeholders, regulatory compliance, space and budget constraints, seasonal cycles, transportation logistics and student needs. Technology can help manage this complexity, but it also introduces new challenges. One of those challenges is scheduling. Despite calendar apps and SIS platforms, coordinating student, staff, spaces, and events remains a challenge for many schools.
             </p>
             <p className="body-large text-text-dark-blue max-w-4xl mx-auto mt-6">
-              So, we set out to solve it — working closely with 11 founding school partners (listed below). These partners provided invaluable feedback and insights to help us build a valuable, low-maintenance solution to calendar chaos at schools. Since then, we've helped over 200 schools put an end to calendar chaos.
+              So, we set out to solve it — working closely with 11 founding school partners (listed below). These partners provided invaluable feedback and insights to help us build a valuable, low-maintenance solution to calendar chaos at schools. Since then, we've helped hundreds of schools put an end to calendar chaos.
             </p>
           </div>
         </div>

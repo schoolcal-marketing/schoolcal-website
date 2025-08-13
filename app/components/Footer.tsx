@@ -23,7 +23,7 @@ export default function Footer() {
               Connect your calendars, connect your school.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-background-white/60 hover:text-primary transition-colors">
+              <a href="https://www.youtube.com/@SchoolCalTV" target="_blank" rel="noopener noreferrer" className="text-background-white/60 hover:text-primary transition-colors">
                 <span className="sr-only">YouTube</span>
                 <Youtube className="w-6 h-6" />
               </a>

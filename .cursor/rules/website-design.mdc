@@ -1,0 +1,18 @@
+---
+alwaysApply: true
+---
+
+When designing new pages or content, always use the established SchoolCal design system and styling patterns:
+
+- Always use custom CSS classes from globals.css instead of generic Tailwind classes
+- Follow the established layout patterns used across the site
+- For example, primary buttons, typography, and background colors should match the styles found in globals.css and used on the rest of the website
+
+TYPOGRAPHY:
+- Use heading-1, heading-2, heading-3 classes for headings (not generic text-4xl, text-3xl, etc.)
+- Use body-large, body-medium, body-small classes for body text
+- All text uses Figtree font family (already applied via CSS variables)
+
+COLORS:
+- Refer to globals.css for the colors I ask for
+- For example, if I ask for a "cream background look for the existing tailwind styling that uses cream (bg-background-cream)

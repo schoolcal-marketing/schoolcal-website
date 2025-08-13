@@ -3,6 +3,7 @@ import { Figtree } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import PromoBanner from "./components/PromoBanner";
 
 const figtree = Figtree({
   subsets: ["latin"],
@@ -32,6 +33,9 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // Toggle this to show/hide the promo banner
+  const SHOW_PROMO_BANNER = true;
+
   return (
     <html lang="en" className={figtree.variable}>
       <head>
@@ -40,6 +44,7 @@ export default function RootLayout({
         {/* / Fathom */}
       </head>
       <body className="font-sans min-h-screen flex flex-col">
+        {SHOW_PROMO_BANNER && <PromoBanner />}
         <Header />
         <main className="flex-1">
           {children}

@@ -42,13 +42,13 @@ export default function PricingCalculator() {
           <Slider
             value={[studentCount]}
             onValueChange={(value) => setStudentCount(value[0])}
-            min={500}
+            min={700}
             max={20000}
             step={100}
             className="w-full"
           />
           <div className="flex justify-between text-sm text-text-dark-blue mt-2">
-            <span>500</span>
+            <span>700</span>
             <span>20,000</span>
           </div>
         </div>
@@ -72,7 +72,7 @@ export default function PricingCalculator() {
         </div>
 
         <p className="body-small text-text-dark-blue">
-          More than 20k students? Call us for pricing.
+          Less than 700 or more than 20,000 users? Call for pricing.
         </p>
       </div>
     </div>

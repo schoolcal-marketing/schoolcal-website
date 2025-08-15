@@ -28,7 +28,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen snap-y snap-mandatory">
       {/* Hero Section */}
       <section className="bg-background-cream py-20 lg:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -90,7 +90,7 @@ export default function Home() {
       </section>
 
       {/* Customer Logos Section */}
-      <section className="py-16 bg-background-cream">
+      <section className="py-12 pb-40 bg-background-cream">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="heading-2 text-text-black mb-4">
@@ -158,8 +158,148 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Before SchoolCal Section */}
+      <section className="py-40 bg-background-dark snap-start overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+            {/* Left Column - Content */}
+            <div className="lg:pt-4 lg:pr-8">
+              <div className="lg:max-w-lg space-y-6">
+                <h2 className="heading-2 text-white">
+                  Before SchoolCal
+                </h2>
+                <p className="body-large text-white/90">
+                  Your SIS has the schedule, but everyone's actually working in Google and Outlook. They can't see who's free or what spaces are available. So <strong>simple scheduling becomes complicated, and the whole school feels it.</strong>
+                </p>
+                <ul className="space-y-3">
+                  <li className="flex items-start gap-3">
+                    <div className="flex-shrink-0 w-6 h-6 rounded-full bg-red-100 flex items-center justify-center mt-1">
+                      <svg className="w-4 h-4 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                      </svg>
+                    </div>
+                    <span className="body-medium text-white/90">
+                      Administrators spend hours coordinating people & spaces.
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <div className="flex-shrink-0 w-6 h-6 rounded-full bg-red-100 flex items-center justify-center mt-1">
+                      <svg className="w-4 h-4 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                      </svg>
+                    </div>
+                    <span className="body-medium text-white/90">
+                      Teachers can't access schedules or observe classes.
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <div className="flex-shrink-0 w-6 h-6 rounded-full bg-red-100 flex items-center justify-center mt-1">
+                      <svg className="w-4 h-4 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                      </svg>
+                    </div>
+                    <span className="body-medium text-white/90">
+                      Students can't take ownership of their schedules.
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <div className="flex-shrink-0 w-6 h-6 rounded-full bg-red-100 flex items-center justify-center mt-1">
+                      <svg className="w-4 h-4 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                      </svg>
+                    </div>
+                    <span className="body-medium text-white/90">
+                      Parents lack visibility into their student's school life.
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            
+            {/* Right Column - Image */}
+            <Image
+              src="/images/before.png"
+              alt="Before SchoolCal - showing scheduling chaos and complexity"
+              width={2432}
+              height={1442}
+              className="w-3xl max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-228 md:-ml-4 lg:-ml-0"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* After SchoolCal Section */}
+      <section className="py-40 bg-background-cream snap-start overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+            {/* Left Column - Content */}
+            <div className="lg:pt-4 lg:pr-8">
+              <div className="lg:max-w-lg space-y-6">
+                <h2 className="heading-2 text-text-black">
+                  After SchoolCal
+                </h2>
+                <p className="body-large text-text-dark-blue">
+                  Your SIS schedule data automatically syncs to staff and student calendars. Everyone can see their schedule, and when others are free or busy. So <strong>scheduling is a breeze.</strong>
+                </p>
+                <ul className="space-y-3">
+                  <li className="flex items-start gap-3">
+                    <div className="flex-shrink-0 w-6 h-6 rounded-full bg-green-100 flex items-center justify-center mt-1">
+                      <svg className="w-4 h-4 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <span className="body-medium text-text-dark-blue">
+                      Administrators book meetings & spaces in seconds
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <div className="flex-shrink-0 w-6 h-6 rounded-full bg-green-100 flex items-center justify-center mt-1">
+                      <svg className="w-4 h-4 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <span className="body-medium text-text-dark-blue">
+                      Teachers can see their classes and observe others
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <div className="flex-shrink-0 w-6 h-6 rounded-full bg-green-100 flex items-center justify-center mt-1">
+                      <svg className="w-4 h-4 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <span className="body-medium text-text-dark-blue">
+                      Students take ownership of their schedule
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <div className="flex-shrink-0 w-6 h-6 rounded-full bg-green-100 flex items-center justify-center mt-1">
+                      <svg className="w-4 h-4 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <span className="body-medium text-text-dark-blue">
+                      Parents have more visibility
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            
+            {/* Right Column - Image */}
+            <Image
+              src="/images/after.png"
+              alt="After SchoolCal - showing streamlined scheduling and organization"
+              width={2432}
+              height={1442}
+              className="w-3xl max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-228 md:-ml-4 lg:-ml-0"
+            />
+          </div>
+        </div>
+      </section>
+
       {/* Before/After Toggle Section */}
-      <ToggleSection />
+      {/* <ToggleSection /> */}
 
       {/* Solution Section */}
       <section className="py-20 bg-background-white">

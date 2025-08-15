@@ -3,6 +3,7 @@ import RotatingLogo from "./components/RotatingLogo";
 import Image from "next/image";
 import ToggleSection from "./components/ToggleSection";
 import PersonasSection from "./components/PersonasSection";
+import VisibilityIcon from "./components/VisibilityIcon";
 
 export const metadata: Metadata = {
   title: 'SchoolCal - Sync SIS Schedules to Staff & Student Calendars',
@@ -159,7 +160,7 @@ export default function Home() {
       </section>
 
       {/* Before SchoolCal Section */}
-      <section className="py-40 bg-background-dark snap-start overflow-hidden">
+      <section className="py-40 bg-background-dark snap-start overflow-hidden relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
             {/* Left Column - Content */}
@@ -229,7 +230,7 @@ export default function Home() {
       </section>
 
       {/* After SchoolCal Section */}
-      <section className="py-40 bg-background-cream snap-start overflow-hidden">
+      <section className="py-40 bg-background-cream snap-start overflow-hidden" data-section="after">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
             {/* Left Column - Content */}
@@ -287,13 +288,25 @@ export default function Home() {
             </div>
             
             {/* Right Column - Image */}
-            <Image
-              src="/images/after.png"
-              alt="After SchoolCal - showing streamlined scheduling and organization"
-              width={2432}
-              height={1442}
-              className="w-3xl max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-228 md:-ml-4 lg:-ml-0"
-            />
+            <div className="relative">
+              <div className="relative">
+                <Image
+                  src="/images/before.png"
+                  alt="Before SchoolCal - showing scheduling chaos and complexity"
+                  width={2432}
+                  height={1442}
+                  className="w-3xl max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-228 md:-ml-4 lg:-ml-0 transition-opacity duration-300 before-image"
+                />
+                <Image
+                  src="/images/after.png"
+                  alt="After SchoolCal - showing streamlined scheduling and organization"
+                  width={2432}
+                  height={1442}
+                  className="w-3xl max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-228 md:-ml-4 lg:-ml-0 absolute top-0 left-0 transition-opacity duration-300 after-image"
+                />
+              </div>
+              <VisibilityIcon />
+            </div>
           </div>
         </div>
       </section>

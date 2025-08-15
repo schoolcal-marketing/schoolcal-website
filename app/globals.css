@@ -269,3 +269,61 @@ body {
 .animate-float-cursor {
   animation: float-cursor 3s ease-in-out infinite;
 }
+
+/* Visibility Icon Animation */
+.eye-closed {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.eye-open {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Default state: blue background, orange icon */
+.visibility-icon-container {
+  background-color: var(--secondary);
+}
+
+/* When the After section is in view, trigger the transition */
+.after-section-in-view .eye-closed {
+  opacity: 0;
+}
+
+.after-section-in-view .eye-open {
+  opacity: 1;
+}
+
+/* After section in view: orange background */
+.after-section-in-view.visibility-icon-container {
+  background-color: var(--primary);
+}
+
+/* Image transition styles */
+.before-image {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.after-image {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* When After section is in view, transition the images */
+.after-section-in-view .before-image {
+  opacity: 0;
+}
+
+.after-section-in-view .after-image {
+  opacity: 1;
+}

@@ -30,6 +30,8 @@ const VisibilityIcon = () => {
     // On mobile, observe the image itself instead of the section
     const targetElement = isMobile ? imageContainer : afterSection;
     
+    if (!targetElement) return; // Add null check
+    
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {

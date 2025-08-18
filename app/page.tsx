@@ -74,7 +74,7 @@ export default function Home() {
             </div>
             
             {/* Calendar Interface Image */}
-            <div className="max-w-4xl mx-auto">
+            <div className="max-w-7xl mx-auto">
               <div className="relative">
                 <Image
                   src="/images/homepage-hero.png"

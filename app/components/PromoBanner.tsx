@@ -31,7 +31,7 @@ export default function PromoBanner() {
         {/* Centered Content Group */}
         <div className="flex-1 flex items-center justify-center gap-4">
           <p className="text-sm sm:text-base font-medium text-center">
-            Same SchoolCal, new brand. Learn how we're doubling down on our mission.
+            New SchoolCal look: same app, fresh brand. See how we’re advancing our mission.
           </p>
           <Link
             href="/articles/rebrand"

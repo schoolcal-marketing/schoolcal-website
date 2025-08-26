@@ -330,7 +330,7 @@ export default function Home() {
           <div className="max-w-4xl mx-auto">
             <div className="relative">
               <Image
-                src="/images/diagram.png"
+                src="/images/diagram-transparent.png"
                 alt="SchoolCal solution diagram showing native API integration vs iCal overlay"
                 width={1200}
                 height={600}

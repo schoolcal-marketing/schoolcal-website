@@ -275,11 +275,10 @@ export default function AboutPage() {
             <div className="text-center">
               <div className="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 overflow-hidden">
                 {/* Example: Add image src here when available */}
-                {/* <img src="/images/team/alisha-balmer.jpg" alt="Alisha Balmer" className="w-full h-full object-cover" /> */}
-                <span className="text-primary font-semibold text-lg">AB</span>
+                <img src="/images/team/team-alisha.png" alt="Alisha Balmer" className="w-full h-full object-cover" />
               </div>
               <p className="body-large text-text-black mb-2">
-                Alisha Balmer
+                Alisha Balmer 
               </p>
               <p className="body-small text-text-dark-blue">Operations</p>
             </div>

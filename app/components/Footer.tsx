@@ -58,6 +58,11 @@ export default function Footer() {
                   Benefits
                 </Link>
               </li>
+              <li>
+                <Link href="#" className="body-medium text-background-white/60 hover:text-primary transition-colors">
+                  Referral Program
+                </Link>
+              </li>
             </ul>
           </div>
 

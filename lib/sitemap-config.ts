@@ -81,6 +81,11 @@ export const staticPages: SitemapPage[] = [
     priority: 0.7,
   },
   {
+    url: '/referral-program',
+    changeFrequency: 'monthly',
+    priority: 0.7,
+  },
+  {
     url: '/resources',
     changeFrequency: 'weekly',
     priority: 0.8,

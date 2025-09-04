@@ -68,7 +68,7 @@ export default async function ResourcesPage() {
               Resources
             </h1>
             <p className="body-large text-text-dark-blue max-w-2xl mx-auto">
-              Educational articles, guides, and insights to help you make the most of SchoolCal.
+              Get practical ideas and resources to help you streamline operations at your school.
             </p>
           </div>
         </div>

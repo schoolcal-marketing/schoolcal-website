@@ -16,7 +16,7 @@ const representatives: Representative[] = [
   {
     name: "Jill Bergey",
     firstName: "Jill",
-    calendlyUrl: "https://calendly.com/jill-bergey",
+    calendlyUrl: "https://meetings.hubspot.com/jill-bergey",
     image: "/images/team/team-jill.jpeg",
     usStates: [
       "Alaska", "Hawaii", "Washington", "Oregon", "California", "Nevada", 
@@ -29,7 +29,7 @@ const representatives: Representative[] = [
   {
     name: "Garrett Sattazahn",
     firstName: "Garrett",
-    calendlyUrl: "https://calendly.com/garrett-sattazahn-schoolcal/",
+    calendlyUrl: "https://meetings.hubspot.com/garrett-sattazahn",
     image: "/images/team/team-garrett.jpeg",
     usStates: [
       "Maine", "New Hampshire", "Vermont", "Massachusetts", "Rhode Island", 
@@ -41,7 +41,7 @@ const representatives: Representative[] = [
   {
     name: "Cole Levis",
     firstName: "Cole",
-    calendlyUrl: "https://calendly.com/cole-levis",
+    calendlyUrl: "https://meetings.hubspot.com/cole-levis",
     image: "/images/team/team-cole.png",
     usStates: [
       "Pennsylvania", "Delaware", "Maryland", "Virginia", "North Carolina", 
@@ -208,7 +208,7 @@ export default function DemoBookingForm() {
                 {/* Text Content */}
                 <div className="text-center">
                   <h3 className="heading-3 text-text-black mb-2">
-                    {representative.firstName} specializes in {selectedState || selectedInternational}
+                    {representative.firstName} works with {selectedState || selectedInternational} schools
                   </h3>
                   <p className="body-medium text-text-black">
                     {representative.firstName} will help you learn how SchoolCal can help with your school's specific needs.

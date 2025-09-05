@@ -39,9 +39,11 @@ function discoverPages(): SitemapPage[] {
               priority: 0.7,
             })
           } catch {
-            // No page.tsx, continue scanning subdirectories
-            scanDirectory(fullPath, baseUrl + '/' + item)
+            // No page.tsx found in this directory
           }
+          
+          // Always continue scanning subdirectories (regardless of whether this dir has page.tsx)
+          scanDirectory(fullPath, baseUrl + '/' + item)
         }
       }
     } catch (error) {
@@ -130,6 +132,27 @@ export const staticPages: SitemapPage[] = [
     url: '/legal/subprocessors',
     changeFrequency: 'yearly',
     priority: 0.4,
+  },
+  // Integration pages (with custom priority - auto-discovery will find them but these override with higher priority)
+  {
+    url: '/integrations',
+    changeFrequency: 'monthly',
+    priority: 0.8,
+  },
+  {
+    url: '/integrations/veracross',
+    changeFrequency: 'monthly',
+    priority: 0.8,
+  },
+  {
+    url: '/integrations/blackbaud',
+    changeFrequency: 'monthly',
+    priority: 0.8,
+  },
+  {
+    url: '/integrations/powerschool',
+    changeFrequency: 'monthly',
+    priority: 0.8,
   },
 ]
 

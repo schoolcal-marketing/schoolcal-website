@@ -2,11 +2,13 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { useState, useRef, useEffect } from "react";
+import { Menu, X, ChevronDown } from "lucide-react";
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isProductDropdownOpen, setIsProductDropdownOpen] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -15,6 +17,28 @@ export default function Header() {
   const closeMobileMenu = () => {
     setIsMobileMenuOpen(false);
   };
+
+  const toggleProductDropdown = () => {
+    setIsProductDropdownOpen(!isProductDropdownOpen);
+  };
+
+  const closeProductDropdown = () => {
+    setIsProductDropdownOpen(false);
+  };
+
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+        setIsProductDropdownOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
 
   return (
     <header className="bg-background-white border-b border-border sticky top-0 z-50">
@@ -34,12 +58,63 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-8">
-            <Link 
-              href="/product" 
-              className="body-medium text-text-dark-blue hover:text-primary transition-colors"
+            {/* Product Dropdown */}
+            <div 
+              className="relative" 
+              ref={dropdownRef}
+              onMouseEnter={() => setIsProductDropdownOpen(true)}
+              onMouseLeave={() => setIsProductDropdownOpen(false)}
             >
-              Product
-            </Link>
+              <button
+                onClick={toggleProductDropdown}
+                className="body-medium text-text-dark-blue hover:text-primary transition-colors flex items-center gap-1"
+                aria-expanded={isProductDropdownOpen}
+                aria-haspopup="true"
+              >
+                Product
+                <ChevronDown 
+                  className={`w-4 h-4 transition-transform ${
+                    isProductDropdownOpen ? 'rotate-180' : ''
+                  }`} 
+                />
+              </button>
+              
+              {/* Dropdown Menu */}
+              {isProductDropdownOpen && (
+                <div className="absolute top-full left-0 -mt-1 w-56 bg-background-white border border-border rounded-lg shadow-lg z-50">
+                  <div className="py-2">
+                    <Link
+                      href="/product"
+                      className="block px-4 py-3 body-medium text-text-dark-blue hover:text-primary hover:bg-gray-50 transition-colors"
+                      onClick={closeProductDropdown}
+                    >
+                      All Features
+                    </Link>
+                    <Link
+                      href="/integrations/powerschool"
+                      className="block px-4 py-3 body-medium text-text-dark-blue hover:text-primary hover:bg-gray-50 transition-colors"
+                      onClick={closeProductDropdown}
+                    >
+                      For PowerSchool
+                    </Link>
+                    <Link
+                      href="/integrations/veracross"
+                      className="block px-4 py-3 body-medium text-text-dark-blue hover:text-primary hover:bg-gray-50 transition-colors"
+                      onClick={closeProductDropdown}
+                    >
+                      For Veracross
+                    </Link>
+                    <Link
+                      href="/integrations/blackbaud"
+                      className="block px-4 py-3 body-medium text-text-dark-blue hover:text-primary hover:bg-gray-50 transition-colors"
+                      onClick={closeProductDropdown}
+                    >
+                      For Blackbaud
+                    </Link>
+                  </div>
+                </div>
+              )}
+            </div>
             <Link 
               href="/benefits" 
               className="body-medium text-text-dark-blue hover:text-primary transition-colors"
@@ -103,13 +178,51 @@ export default function Header() {
           <div className="lg:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 bg-background-white border-t border-border">
               {/* Mobile Navigation Links */}
-              <Link 
-                href="/product" 
-                className="block px-3 py-2 body-medium text-text-dark-blue hover:text-primary hover:bg-gray-50 rounded-md transition-colors"
-                onClick={closeMobileMenu}
+              {/* Product Dropdown for Mobile */}
+              <button
+                onClick={toggleProductDropdown}
+                className="flex items-center justify-between w-full px-3 py-2 body-medium text-text-dark-blue hover:text-primary hover:bg-gray-50 rounded-md transition-colors"
+                aria-expanded={isProductDropdownOpen}
               >
                 Product
-              </Link>
+                <ChevronDown 
+                  className={`w-4 h-4 transition-transform ${
+                    isProductDropdownOpen ? 'rotate-180' : ''
+                  }`} 
+                />
+              </button>
+              
+              {/* Mobile Dropdown Menu - Conditional rendering with proper event handling */}
+              <div className={`transition-all duration-200 ${isProductDropdownOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0 overflow-hidden'}`}>
+                <Link
+                  href="/product"
+                  className="block px-3 py-2 body-small text-text-dark-blue hover:text-primary hover:bg-gray-50 rounded-md transition-colors ml-4"
+                  onClick={closeMobileMenu}
+                >
+                  All Features
+                </Link>
+                <Link
+                  href="/integrations/powerschool"
+                  className="block px-3 py-2 body-small text-text-dark-blue hover:text-primary hover:bg-gray-50 rounded-md transition-colors ml-4"
+                  onClick={closeMobileMenu}
+                >
+                  For PowerSchool
+                </Link>
+                <Link
+                  href="/integrations/veracross"
+                  className="block px-3 py-2 body-small text-text-dark-blue hover:text-primary hover:bg-gray-50 rounded-md transition-colors ml-4"
+                  onClick={closeMobileMenu}
+                >
+                  For Veracross
+                </Link>
+                <Link
+                  href="/integrations/blackbaud"
+                  className="block px-3 py-2 body-small text-text-dark-blue hover:text-primary hover:bg-gray-50 rounded-md transition-colors ml-4"
+                  onClick={closeMobileMenu}
+                >
+                  For Blackbaud
+                </Link>
+              </div>
               <Link 
                 href="/benefits" 
                 className="block px-3 py-2 body-medium text-text-dark-blue hover:text-primary hover:bg-gray-50 rounded-md transition-colors"

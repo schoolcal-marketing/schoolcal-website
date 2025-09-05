@@ -411,7 +411,7 @@ export default function VeracrossIntegrationPage() {
             {/* Left Column - iCal & Overlay Calendars */}
             <div className="bg-background-sand rounded-lg p-8">
               <h3 className="heading-3 text-text-black mb-6">
-                With iCal & Overlay Calendars
+                With Veracross iCal feeds
               </h3>
               <ul className="space-y-4">
                 <li className="flex items-start">

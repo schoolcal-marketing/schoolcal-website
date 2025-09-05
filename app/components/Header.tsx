@@ -81,7 +81,10 @@ export default function Header() {
               
               {/* Dropdown Menu */}
               {isProductDropdownOpen && (
-                <div className="absolute top-full left-0 -mt-1 w-56 bg-background-white border border-border rounded-lg shadow-lg z-50">
+                <>
+                  {/* Invisible bridge to maintain hover connection */}
+                  <div className="absolute top-full left-0 w-full h-2"></div>
+                  <div className="absolute top-full left-0 mt-2 w-56 bg-background-white border border-border rounded-lg shadow-lg z-50">
                   <div className="py-2">
                     <Link
                       href="/product"
@@ -113,6 +116,7 @@ export default function Header() {
                     </Link>
                   </div>
                 </div>
+                </>
               )}
             </div>
             <Link 

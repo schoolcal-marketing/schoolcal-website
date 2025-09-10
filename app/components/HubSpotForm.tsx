@@ -2,11 +2,17 @@
 
 import { useEffect } from "react";
 
-export default function HubSpotForm() {
+interface HubSpotFormProps {
+  portalId: string;
+  formId: string;
+  region?: string;
+}
+
+export default function HubSpotForm({ portalId, formId, region = "na1" }: HubSpotFormProps) {
   useEffect(() => {
     // Load HubSpot script only on client side
     const script = document.createElement("script");
-    script.src = "https://js.hsforms.net/forms/embed/21668382.js";
+    script.src = `https://js.hsforms.net/forms/embed/${portalId}.js`;
     script.defer = true;
     document.head.appendChild(script);
 
@@ -16,13 +22,13 @@ export default function HubSpotForm() {
         document.head.removeChild(script);
       }
     };
-  }, []);
+  }, [portalId]);
 
   return (
     <div className="hs-form-frame" 
-         data-region="na1" 
-         data-form-id="dffd94d9-8745-4e0d-9bf5-9af3edc473f0" 
-         data-portal-id="21668382">
+         data-region={region} 
+         data-form-id={formId} 
+         data-portal-id={portalId}>
     </div>
   );
 }

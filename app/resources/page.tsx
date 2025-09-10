@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import sanityClient from '@/lib/sanity';
+import HubSpotAPIForm from '../components/HubSpotAPIForm';
 
 export const metadata: Metadata = {
   title: 'Calendar Resources | SchoolCal',
@@ -67,9 +68,20 @@ export default async function ResourcesPage() {
             <h1 className="heading-1 text-text-black mb-4">
               Resources
             </h1>
-            <p className="body-large text-text-dark-blue max-w-2xl mx-auto">
-              Get practical ideas and resources to help you streamline operations at your school.
+            <p className="body-large text-text-dark-blue max-w-2xl mx-auto mb-8">
+              Coming soon: Get practical ideas, playbooks, and resources to improve school operations. Get them delivered to your inbox.
             </p>
+            
+            {/* Email Signup Form */}
+            <div className="max-w-md mx-auto">
+              <HubSpotAPIForm 
+                portalId="21668382" 
+                formId="4aa23d27-cf41-4c08-8d72-7191e28378c2"
+                buttonText="Subscribe"
+                placeholder="sarah@myschool.com"
+                successMessage="You're in!"
+              />
+            </div>
           </div>
         </div>
       </section>

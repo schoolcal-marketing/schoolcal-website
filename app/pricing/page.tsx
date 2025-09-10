@@ -46,7 +46,10 @@ export default function PricingPage() {
           
           {/* HubSpot Form */}
           <div className="bg-background-white rounded-lg p-8 shadow-lg">
-            <HubSpotForm />
+            <HubSpotForm 
+              portalId="21668382" 
+              formId="dffd94d9-8745-4e0d-9bf5-9af3edc473f0" 
+            />
           </div>
         </div>
       </section>

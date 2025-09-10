@@ -18,6 +18,15 @@ export async function POST(request: NextRequest) {
           name: 'email',
           value: email
         },
+        // Automatically mark as marketing contact
+        {
+          name: 'hs_marketing_consent',
+          value: 'true'
+        },
+        {
+          name: 'hs_marketing_consent_date',
+          value: new Date().toISOString()
+        },
         // Add other fields if they exist
         ...Object.entries(otherFields).map(([key, value]) => ({
           name: key,

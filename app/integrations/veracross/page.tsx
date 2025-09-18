@@ -610,7 +610,7 @@ export default function VeracrossIntegrationPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-primary">
+      <section className="py-20 bg-secondary">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="heading-2 text-white mb-4">
             Learn how SchoolCal can help you
@@ -620,7 +620,7 @@ export default function VeracrossIntegrationPage() {
           </p>
           <a 
             href="/demo" 
-            className="bg-white text-primary px-8 py-4 rounded-lg hover:bg-background-cream transition-all duration-300 hover:scale-105 active:scale-95 font-medium body-large shadow-lg hover:shadow-xl"
+            className="bg-primary text-white px-8 py-4 rounded-lg hover:bg-primary-dark transition-all duration-300 hover:scale-105 active:scale-95 font-medium body-large shadow-lg hover:shadow-xl"
           >
             Book a Demo
           </a>

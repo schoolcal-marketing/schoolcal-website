@@ -15,19 +15,19 @@ import {
 } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Sync iSAMS Schedules to Google or Outlook | SchoolCal',
-  description: 'Automatically sync iSAMS schedules and events to users primary Google or Outlook calendars.',
+  title: 'Sync Infinite Campus Schedules to Google or Outlook | SchoolCal',
+  description: 'Automatically sync Infinite Campus schedules and events to users primary Google or Outlook calendars.',
   openGraph: {
-    title: 'iSAMS Integration - SchoolCal',
-    description: 'Seamlessly integrate SchoolCal with iSAMS Student Information System for automatic calendar synchronization and management.',
+    title: 'Sync Infinite Campus Schedules to Google or Outlook | SchoolCal',
+    description: 'Automatically sync Infinite Campus schedules and events to users primary Google or Outlook calendars.',
     type: 'website',
   },
   alternates: {
-    canonical: 'https://schoolcal.com/integrations/isams',
+    canonical: 'https://schoolcal.com/integrations/infinite-campus',
   },
 }
 
-export default function iSAMSIntegrationPage() {
+export default function InfiniteCampusIntegrationPage() {
   return (
     <div className="min-h-screen bg-background-white">
       <style dangerouslySetInnerHTML={{
@@ -52,20 +52,20 @@ export default function iSAMSIntegrationPage() {
           <div className="text-center">
             <div className="max-w-4xl mx-auto">
               <div className="inline-block bg-[#FEEAAE] text-text-black px-4 py-2 rounded-full text-sm font-medium mb-6">
-                <strong>Get early access</strong>: iSAMS integration in Beta, 50% off for a limited time.
+                <strong>Join the Beta</strong>: Get early & discounted access to the Infinite Campus integration.
               </div>
               <h1 className="heading-display text-text-black mb-6">
-                Sync iSAMS schedules to Google or Outlook calendars
+                Sync Infinite Campus schedules to Google or Outlook calendars
               </h1>
               <p className="max-w-2xl mx-auto body-large text-text-dark-blue mb-8">
-                Automatically sync event data from iSAMS to staff and students' primary Google or Outlook calendars.
+                Automatically sync event data from Infinite Campus to staff and students' primary Google or Outlook calendars.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
                 {/* Email Signup Form */}
                 <div className="max-w-md mx-auto">
                 <HubSpotAPIForm 
                     portalId="21668382" 
-                    formId="4ff5a202-45fa-4960-98ad-0caf2005b8f9"
+                    formId="bcf52f8b-cc21-438c-8d3d-5425bdee0f74"
                     buttonText="Join Beta"
                     placeholder="sarah@myschool.com"
                     successMessage="You're on the list! We'll be in touch soon."
@@ -153,10 +153,10 @@ export default function iSAMSIntegrationPage() {
       <section className="py-20 bg-background-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {/* Left Column - Sync iSAMS... */}
+            {/* Left Column - Sync Infinite Campus... */}
             <div>
               <h2 className="heading-2 text-text-black mb-8">
-                Sync iSAMS...
+                Sync Infinite Campus...
               </h2>
               
               {/* Accordion Features Stack */}
@@ -180,7 +180,7 @@ export default function iSAMSIntegrationPage() {
                   </label>
                   <div className="px-6 pb-6 hidden" data-content>
                     <p className="body-medium text-text-dark-blue">
-                      Sync teacher and student class schedules directly to their primary Google calendars. SchoolCal pulls from iSAMS's Bell Schedules and Master Calendar to ensure the right meeting times always appear. As changes happen, like add/drops or special schedules, availability automatically updates in real time. This helps individuals manage their days while solving the broader challenge of finding available meeting times across constantly changing school schedules.
+                      Sync teacher and student class schedules directly to their primary Google calendars.
                     </p>
                   </div>
                 </div>
@@ -204,7 +204,7 @@ export default function iSAMSIntegrationPage() {
                   </label>
                   <div className="px-6 pb-6 hidden" data-content>
                     <p className="body-medium text-text-dark-blue">
-                      Keep everyone on the same page by syncing iSAMS Cycle Days as free all-day events on primary calendars. Whether tied to a Bell Schedule or defined in the Master Calendar, the correct Cycle Day label appears automatically. This makes it easy for students, parents, and teachers to track rotating schedules, while also supporting staff who work on standard Monday–Friday routines.
+                      Keep everyone on the same page by syncing rotation days as all-day events on primary calendars.
                     </p>
                   </div>
                 </div>
@@ -277,7 +277,7 @@ export default function iSAMSIntegrationPage() {
             {/* Left Column - iCal & Overlay Calendars */}
             <div className="bg-background-sand rounded-lg p-8">
               <h3 className="heading-3 text-text-black mb-6">
-                With iSAMS iCal feeds
+                With Infinite Campus iCal feeds
               </h3>
               <ul className="space-y-4">
                 <li className="flex items-start">
@@ -348,7 +348,7 @@ export default function iSAMSIntegrationPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="heading-2 text-text-black mb-8">
-              Sync iSAMS data, effortlessly
+              Sync Infinite Campus data, effortlessly
             </h2>
             
             {/* Testimonial */}

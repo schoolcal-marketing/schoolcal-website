@@ -84,7 +84,7 @@ export default function Header() {
                 <>
                   {/* Invisible bridge to maintain hover connection */}
                   <div className="absolute top-full left-0 w-full h-2"></div>
-                  <div className="absolute top-full left-0 mt-2 w-56 bg-background-white border border-border rounded-lg shadow-lg z-50">
+                  <div className="absolute top-full left-0 mt-2 w-72 bg-background-white border border-border rounded-lg shadow-lg z-50">
                   <div className="py-2">
                     <Link
                       href="/product"
@@ -119,7 +119,24 @@ export default function Header() {
                       className="block px-4 py-3 body-medium text-text-dark-blue hover:text-primary hover:bg-gray-50 transition-colors"
                       onClick={closeProductDropdown}
                     >
-                      For iSAMS
+                      <div className="flex items-center justify-between">
+                        <span>For iSAMS</span>
+                        <span className="bg-[#FEEAAE] text-text-black px-2 py-1 rounded-full text-xs font-medium">
+                          Join Beta
+                        </span>
+                      </div>
+                    </Link>
+                    <Link
+                      href="/integrations/infinite-campus"
+                      className="block px-4 py-3 body-medium text-text-dark-blue hover:text-primary hover:bg-gray-50 transition-colors"
+                      onClick={closeProductDropdown}
+                    >
+                      <div className="flex items-center justify-between">
+                        <span>For Infinite Campus</span>
+                        <span className="bg-[#FEEAAE] text-text-black px-2 py-1 rounded-full text-xs font-medium">
+                          Join Beta
+                        </span>
+                      </div>
                     </Link>
                   </div>
                 </div>
@@ -238,7 +255,24 @@ export default function Header() {
                   className="block px-3 py-2 body-small text-text-dark-blue hover:text-primary hover:bg-gray-50 rounded-md transition-colors ml-4"
                   onClick={closeMobileMenu}
                 >
-                  For iSAMS
+                  <div className="flex items-center justify-between">
+                    <span>For iSAMS</span>
+                    <span className="bg-[#FEEAAE] text-text-black px-2 py-1 rounded-full text-xs font-medium">
+                      Join Beta
+                    </span>
+                  </div>
+                </Link>
+                <Link
+                  href="/integrations/infinite-campus"
+                  className="block px-3 py-2 body-small text-text-dark-blue hover:text-primary hover:bg-gray-50 rounded-md transition-colors ml-4"
+                  onClick={closeMobileMenu}
+                >
+                  <div className="flex items-center justify-between">
+                    <span>For Infinite Campus</span>
+                    <span className="bg-[#FEEAAE] text-text-black px-2 py-1 rounded-full text-xs font-medium">
+                      Join Beta
+                    </span>
+                  </div>
                 </Link>
               </div>
               <Link 

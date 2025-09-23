@@ -29,7 +29,7 @@ export default function IntegrationsPage() {
       <section className="bg-background-cream py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
               <div className="bg-background-white rounded-lg shadow-md border border-border p-8 hover:shadow-lg transition-shadow">
                 <h2 className="heading-3 text-text-black mb-4">Veracross</h2>
                 <p className="body-medium text-text-dark-blue mb-6">
@@ -61,6 +61,18 @@ export default function IntegrationsPage() {
                 </p>
                 <p className="body-medium">
                   <a href="/integrations/blackbaud" className="text-primary underline hover:text-primary-dark transition-colors">
+                    Learn More
+                  </a>
+                </p>
+              </div>
+
+              <div className="bg-background-white rounded-lg shadow-md border border-border p-8 hover:shadow-lg transition-shadow">
+                <h2 className="heading-3 text-text-black mb-4">iSAMS</h2>
+                <p className="body-medium text-text-dark-blue mb-6">
+                  Sync iSAMS schedules to Google or Outlook calendars automatically.
+                </p>
+                <p className="body-medium">
+                  <a href="/integrations/isams" className="text-primary underline hover:text-primary-dark transition-colors">
                     Learn More
                   </a>
                 </p>

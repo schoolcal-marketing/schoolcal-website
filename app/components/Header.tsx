@@ -114,6 +114,13 @@ export default function Header() {
                     >
                       For Blackbaud
                     </Link>
+                    <Link
+                      href="/integrations/isams"
+                      className="block px-4 py-3 body-medium text-text-dark-blue hover:text-primary hover:bg-gray-50 transition-colors"
+                      onClick={closeProductDropdown}
+                    >
+                      For iSAMS
+                    </Link>
                   </div>
                 </div>
                 </>
@@ -225,6 +232,13 @@ export default function Header() {
                   onClick={closeMobileMenu}
                 >
                   For Blackbaud
+                </Link>
+                <Link
+                  href="/integrations/isams"
+                  className="block px-3 py-2 body-small text-text-dark-blue hover:text-primary hover:bg-gray-50 rounded-md transition-colors ml-4"
+                  onClick={closeMobileMenu}
+                >
+                  For iSAMS
                 </Link>
               </div>
               <Link 

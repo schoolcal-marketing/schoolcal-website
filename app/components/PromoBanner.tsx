@@ -5,7 +5,7 @@ import Link from "next/link";
 import { X } from "lucide-react";
 
 export default function PromoBanner() {
-  const [isVisible, setIsVisible] = useState(true);
+  const [isVisible, setIsVisible] = useState(false);
 
   // Update this version when you change the banner content
   const BANNER_VERSION = "rebrand-promo-1";

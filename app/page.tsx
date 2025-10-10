@@ -164,16 +164,18 @@ export default function Home() {
       {/* Before/After SchoolCal Section */}
       <section className="py-20 bg-background-cream snap-start overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="heading-2 text-text-black">
+              Coordinating people and places shouldn't be so hard.<br />With SchoolCal, it's not.
+            </h2>
+          </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 relative">
             {/* Divider line - only visible on desktop */}
             <div className="hidden lg:block absolute left-1/2 top-0 bottom-0 w-px bg-border -translate-x-1/2"></div>
             {/* Left Column - Before SchoolCal */}
             <div className="space-y-6">
-              <h2 className="heading-2 text-text-black">
-                Before SchoolCal
-              </h2>
               <p className="body-large text-text-dark-blue">
-                Users can't see who's free or what spaces are available. So <strong>simple scheduling becomes complicated, and the whole school feels it.</strong>
+                <strong>Before SchoolCal</strong>, users can't see who's free or what spaces are available. So <strong>scheduling is full of friction.</strong>
               </p>
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
@@ -220,11 +222,8 @@ export default function Home() {
 
             {/* Right Column - After SchoolCal */}
             <div className="space-y-6">
-              <h2 className="heading-2 text-text-black">
-                After SchoolCal
-              </h2>
               <p className="body-large text-text-dark-blue">
-                Your SIS schedule data automatically syncs to staff and student calendars. Everyone can see their schedule, and when others are free or busy. So <strong>scheduling is a breeze.</strong>
+                <strong>After SchoolCal</strong>, everyone can see their schedule, and when others are free or busy. So <strong>scheduling is a breeze.</strong>
               </p>
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">

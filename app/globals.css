@@ -6,9 +6,9 @@
     --primary-dark: #026979;   /* Darker shade for hover states */
     --primary-light: #3594A3;  /* Lighter shade for subtle use */
     
-    --secondary: #131B39;      /* Dark blue - main text color */
-    --secondary-dark: #0f152e; /* Darker shade */
-    --secondary-light: #1a2347; /* Lighter shade */
+    --secondary: #006A7A;      /* Dark blue - main text color */
+    --secondary-dark: #005866; /* Darker shade */
+    --secondary-light: #007C8F; /* Lighter shade */
     
     /* Accent Colors */
     --accent-vanilla: #FEEAAE;    /* Sand accent */
@@ -18,12 +18,12 @@
     /* Background Colors */
     --background-white: #FFFFFF; /* Pure white */
     --background-cream: #F7F5F2; /* Off-white background */
-    --background-dark: #131B39;  /* Dark blue background */
+    --background-dark: #006A7A;  /* Dark blue background */
     --background-sand: #F1DAA6;  /* Sand background */
     
     /* Typography Colors */
     --text-dark-blue: #1B1B1B;  /* Dark blue text */
-    --text-black: #131B39;      /* Black text */
+    --text-black: #1b1b1b;      /* Black text */
     
     /* Neutral Colors */
     --background: var(--background-white);

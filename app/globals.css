@@ -2,9 +2,9 @@
 
   :root {
     /* Brand Colors - SchoolCal Design System */
-    --primary: #FF895E;        /* Primary CTA, buttons, highlights */
-    --primary-dark: #e67a4e;   /* Darker shade for hover states */
-    --primary-light: #ff9a6e;  /* Lighter shade for subtle use */
+    --primary: #02798C;        /* Primary CTA, buttons, highlights */
+    --primary-dark: #026979;   /* Darker shade for hover states */
+    --primary-light: #3594A3;  /* Lighter shade for subtle use */
     
     --secondary: #131B39;      /* Dark blue - main text color */
     --secondary-dark: #0f152e; /* Darker shade */
@@ -16,7 +16,7 @@
     
     /* Background Colors */
     --background-white: #FFFFFF; /* Pure white */
-    --background-cream: #f5f3eb; /* Off-white background */
+    --background-cream: #F7F5F2; /* Off-white background */
     --background-dark: #131B39;  /* Dark blue background */
     --background-sand: #F1DAA6;  /* Sand background */
     

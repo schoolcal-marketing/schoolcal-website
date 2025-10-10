@@ -11,7 +11,7 @@ export default function Footer() {
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center mb-4">
               <Image
-                src="/logos/schoolcal-logo-horizontal-light.svg"
+                src="/logos/schoolcal-logo-light.svg"
                 alt="SchoolCal"
                 width={120}
                 height={32}
@@ -60,7 +60,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="#" className="body-medium text-background-white/60 hover:text-primary transition-colors">
-                  Referral Program
+                  Referral  Program
                 </Link>
               </li>
             </ul>

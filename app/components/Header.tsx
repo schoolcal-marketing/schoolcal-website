@@ -47,7 +47,7 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <Image
-              src="/logos/schoolcal-horizontal-dark.svg"
+              src="/logos/schoolcal-logo.svg"
               alt="SchoolCal"
               width={80}
               height={24}

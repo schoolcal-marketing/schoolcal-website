@@ -81,8 +81,9 @@
   --color-secondary-light: var(--secondary-light);
   
   /* Accent Colors */
-  --color-accent-sand: var(--accent-sand);
-  --color-accent-green: var(--accent-green);
+  --color-accent-vanilla: var(--accent-vanilla);
+  --color-accent-blue: var(--accent-blue);
+  --color-accent-melon: var(--accent-melon);
   
   /* Background Colors */
   --color-background-white: var(--background-white);
@@ -160,6 +161,23 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+/* Accent color utilities */
+.bg-accent-melon {
+  background-color: var(--accent-melon);
+}
+
+.text-accent-melon {
+  color: var(--accent-melon);
+}
+
+.bg-accent-blue {
+  background-color: var(--accent-blue);
+}
+
+.text-accent-blue {
+  color: var(--accent-blue);
 }
 
 /* Figtree Typography Utilities */

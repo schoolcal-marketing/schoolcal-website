@@ -1,5 +1,7 @@
 import { Metadata } from 'next'
 import Image from "next/image"
+import CustomXIcon from '../../components/CustomXIcon';
+import CustomCheckIcon from '../../components/CustomCheckIcon';
 import { 
   BookOpen, 
   Trophy, 
@@ -322,24 +324,24 @@ export default function PowerSchoolIntegrationPage() {
               </h3>
               <ul className="space-y-4">
                 <li className="flex items-start">
-                  <div className="flex-shrink-0 w-6 h-6 bg-red-500 rounded-full flex items-center justify-center mr-3 mt-0.5">
-                    <span className="text-white text-sm font-bold">×</span>
+                  <div className="flex-shrink-0 mr-3 mt-0.5">
+                    <CustomXIcon className="w-6 h-6 text-accent-melon" />
                   </div>
                   <p className="body-medium text-text-dark-blue">
                     Inconsistent sync times - if you change details or locations last minute, your attendees may show up at the wrong spot
                   </p>
                 </li>
                 <li className="flex items-start">
-                  <div className="flex-shrink-0 w-6 h-6 bg-red-500 rounded-full flex items-center justify-center mr-3 mt-0.5">
-                    <span className="text-white text-sm font-bold">×</span>
+                  <div className="flex-shrink-0 mr-3 mt-0.5">
+                    <CustomXIcon className="w-6 h-6 text-accent-melon" />
                   </div>
                   <p className="body-medium text-text-dark-blue">
                     Doesn't impact users' free/busy status - you can see your schedule, but others can't – leading to scheduling tag and double bookings.
                   </p>
                 </li>
                 <li className="flex items-start">
-                  <div className="flex-shrink-0 w-6 h-6 bg-red-500 rounded-full flex items-center justify-center mr-3 mt-0.5">
-                    <span className="text-white text-sm font-bold">×</span>
+                  <div className="flex-shrink-0 mr-3 mt-0.5">
+                    <CustomXIcon className="w-6 h-6 text-accent-melon" />
                   </div>
                   <p className="body-medium text-text-dark-blue">
                     Less granular filtering - you have less control over who you share with, and what metadata you display.
@@ -355,24 +357,24 @@ export default function PowerSchoolIntegrationPage() {
               </h3>
               <ul className="space-y-4">
                 <li className="flex items-start">
-                  <div className="flex-shrink-0 w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mr-3 mt-0.5">
-                    <span className="text-white text-sm font-bold">✓</span>
+                  <div className="flex-shrink-0 mr-3 mt-0.5">
+                    <CustomCheckIcon className="w-6 h-6 text-accent-blue" />
                   </div>
                   <p className="body-medium text-text-dark-blue">
                     Sync automatically, and on-demand - if events change last-minute, just push the change out on-demand
                   </p>
                 </li>
                 <li className="flex items-start">
-                  <div className="flex-shrink-0 w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mr-3 mt-0.5">
-                    <span className="text-white text-sm font-bold">✓</span>
+                  <div className="flex-shrink-0 mr-3 mt-0.5">
+                    <CustomCheckIcon className="w-6 h-6 text-accent-blue" />
                   </div>
                   <p className="body-medium text-text-dark-blue">
                     Show users' actual availability - sync events to users' primary (personal) calendars so they – and others – can see when they're actually free/busy.
                   </p>
                 </li>
                 <li className="flex items-start">
-                  <div className="flex-shrink-0 w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mr-3 mt-0.5">
-                    <span className="text-white text-sm font-bold">✓</span>
+                  <div className="flex-shrink-0 mr-3 mt-0.5">
+                    <CustomCheckIcon className="w-6 h-6 text-accent-blue" />
                   </div>
                   <p className="body-medium text-text-dark-blue">
                     Customize how events display - select who you want to sync to, and granular metadata you want to display so recipients have the details they need.

@@ -11,8 +11,9 @@
     --secondary-light: #1a2347; /* Lighter shade */
     
     /* Accent Colors */
-    --accent-sand: #F1DAA6;    /* Sand accent */
-    --accent-green: #55AC8C;   /* Green accent */
+    --accent-vanilla: #FEEAAE;    /* Sand accent */
+    --accent-blue: #9ED8DB;   /* Green accent */
+    --accent-melon: #F0A7A0;   /* Blue accent */
     
     /* Background Colors */
     --background-white: #FFFFFF; /* Pure white */

@@ -39,7 +39,7 @@
     
     /* Border Colors */
     --border: #e5e7eb;
-    --border-dark: #d1d5db;
+    --border-dark: #1b1b1b;
   
       /* Typography */
     --font-family-sans: var(--font-figtree), 'Figtree', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -136,7 +136,7 @@
     --foreground: var(--background-white);
     --muted: var(--secondary);
     --muted-foreground: var(--accent-sand);
-    --border: var(--secondary-light);
+    --border: #1b1b1b;
     --border-dark: var(--secondary);
   }
 }

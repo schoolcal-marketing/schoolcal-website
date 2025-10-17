@@ -104,7 +104,7 @@ export default function Home() {
           {/* Logo Grid */}
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 items-center justify-items-center">
             {/* Customer Logo 1 */}
-            <div className="w-40 h-20 bg-background-white rounded-lg flex items-center justify-center border border-border shadow-sm p-4">
+            <div className="w-40 h-20 bg-background-white rounded-lg flex items-center justify-center border border-border-dark shadow-sm p-4">
               <Image
                 src="/logos/customer-breck.png"
                 alt="Customer school logo"
@@ -115,7 +115,7 @@ export default function Home() {
             </div>
             
             {/* Customer Logo 2 */}
-            <div className="w-40 h-20 bg-background-white rounded-lg flex items-center justify-center border border-border shadow-sm p-4">
+            <div className="w-40 h-20 bg-background-white rounded-lg flex items-center justify-center border border-border-dark shadow-sm p-4">
               <Image
                 src="/logos/customer-hotchkiss.png"
                 alt="Customer school logo"
@@ -126,7 +126,7 @@ export default function Home() {
             </div>
             
             {/* Customer Logo 3 */}
-            <div className="w-40 h-20 bg-background-white rounded-lg flex items-center justify-center border border-border shadow-sm p-4">
+            <div className="w-40 h-20 bg-background-white rounded-lg flex items-center justify-center border border-border-dark shadow-sm p-4">
               <Image
                 src="/logos/customer-new-trier.png"
                 alt="Customer school logo"
@@ -137,7 +137,7 @@ export default function Home() {
             </div>
             
             {/* Customer Logo 4 */}
-            <div className="w-40 h-20 bg-background-white rounded-lg flex items-center justify-center border border-border shadow-sm p-4">
+            <div className="w-40 h-20 bg-background-white rounded-lg flex items-center justify-center border border-border-dark shadow-sm p-4">
               <Image
                 src="/logos/customer-poly-prep.png"
                 alt="Customer school logo"
@@ -148,7 +148,7 @@ export default function Home() {
             </div>
             
             {/* Customer Logo 5 */}
-            <div className="w-40 h-20 bg-background-white rounded-lg flex items-center justify-center border border-border shadow-sm p-4">
+            <div className="w-40 h-20 bg-background-white rounded-lg flex items-center justify-center border border-border-dark shadow-sm p-4">
               <Image
                 src="/logos/customer-ravenscroft.png"
                 alt="Customer school logo"

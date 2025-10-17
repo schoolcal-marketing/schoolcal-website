@@ -20,6 +20,24 @@ async function getArticles() {
   }
 }
 
+// Fetch customer stories from Sanity
+async function getCustomerStories() {
+  try {
+    const stories = await sanityClient.fetch(`
+      *[_type == "customerStory"] | order(publishedAt desc) {
+        _id,
+        slug,
+        publishedAt,
+        _updatedAt
+      }
+    `)
+    return stories
+  } catch (error) {
+    console.error('Error fetching customer stories for sitemap:', error)
+    return []
+  }
+}
+
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://schoolcal.com'
   
@@ -28,6 +46,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   
   // Get dynamic content from Sanity
   const articles = await getArticles()
+  const customerStories = await getCustomerStories()
   
   // Generate sitemap entries for articles
   const articleEntries = articles.map((article: any) => ({
@@ -37,6 +56,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: sanityContentTypes.article.priority,
   }))
 
+  // Generate sitemap entries for customer stories
+  const storyEntries = customerStories.map((story: any) => ({
+    url: `${baseUrl}${sanityContentTypes.customerStory.baseUrl}/${story.slug.current}`,
+    lastModified: new Date(story._updatedAt || story.publishedAt),
+    changeFrequency: sanityContentTypes.customerStory.changeFrequency,
+    priority: sanityContentTypes.customerStory.priority,
+  }))
+
   // Combine static and dynamic entries
   const allEntries = [
     ...staticPages.map(page => ({
@@ -44,6 +71,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       url: `${baseUrl}${page.url}`,
     })),
     ...articleEntries,
+    ...storyEntries,
   ]
 
   return allEntries

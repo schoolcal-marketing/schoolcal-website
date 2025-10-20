@@ -167,12 +167,6 @@ export default function Header() {
             >
               Resources
             </Link>
-            <Link 
-              href="/stories" 
-              className="body-medium text-text-dark-blue hover:text-primary transition-colors"
-            >
-              Stories
-            </Link>
           </nav>
 
           {/* Desktop CTA Buttons */}
@@ -308,13 +302,6 @@ export default function Header() {
                 onClick={closeMobileMenu}
               >
                 Resources
-              </Link>
-              <Link 
-                href="/stories" 
-                className="block px-3 py-2 body-medium text-text-dark-blue hover:text-primary hover:bg-gray-50 rounded-md transition-colors"
-                onClick={closeMobileMenu}
-              >
-                Stories
               </Link>
               
               {/* Mobile CTA Buttons */}

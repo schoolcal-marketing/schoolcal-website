@@ -9,11 +9,14 @@ export default function CustomerStory() {
           "The payoff was immediate and very obvious."
         </h3>
         <div className="flex items-center">
-          <div className="w-12 h-12 rounded-full bg-gray-200 flex items-center justify-center mr-4 flex-shrink-0">
-            {/* Placeholder for Willy Felton's headshot - replace with actual image */}
-            <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-white font-semibold text-lg">
-              WF
-            </div>
+          <div className="w-12 h-12 rounded-full mr-4 flex-shrink-0 overflow-hidden">
+            <Image 
+              src="/images/willy-felton-headshot.png" 
+              alt="Willy Felton, Director of Information Technology at Seattle Academy"
+              width={48}
+              height={48}
+              className="w-full h-full object-cover"
+            />
           </div>
           <div className="min-w-0">
             <p className="body-small text-text-dark-blue"><strong>Willy Felton</strong>, Director of Information Technology at Seattle Academy</p>

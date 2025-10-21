@@ -36,7 +36,7 @@ export default function PricingCalculator() {
     <div className="max-w-2xl mx-auto bg-background-white rounded-lg p-8 shadow-lg">
       <div className="text-center mb-8">
         <h3 className="heading-3 text-text-black mb-10">
-          School size: {studentCount.toLocaleString()} Active Users
+          School size: {studentCount.toLocaleString()} active users
           <span className="ml-2 relative inline-block">
             <span 
               className="inline-flex items-center justify-center w-4 h-4 text-xs text-text-dark-blue cursor-help border border-text-dark-blue rounded-full hover:bg-text-dark-blue hover:text-white transition-colors"
@@ -75,7 +75,7 @@ export default function PricingCalculator() {
             <span className="bg-accent-blue text-text-black px-3 py-1 rounded-lg mx-1">
               ${annualCost.toLocaleString()}/year
             </span>
-            (${perStudentCost.toFixed(2)}/user/year)
+            — ${perStudentCost.toFixed(2)} per user/year
           </p>
         </div>
 

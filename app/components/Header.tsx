@@ -187,17 +187,19 @@ export default function Header() {
                   <div className="py-2">
                     <Link
                       href="/benefits"
-                      className="block px-4 py-3 body-medium text-text-dark-blue hover:text-primary hover:bg-gray-50 transition-colors"
+                      className="block px-4 py-3 hover:bg-gray-50 transition-colors"
                       onClick={closeBenefitsDropdown}
                     >
-                      Benefits – What schools gain from SchoolCal
+                      <div className="body-medium text-text-dark-blue hover:text-primary">Benefits</div>
+                      <div className="body-small text-gray-500 mt-1">What schools gain from SchoolCal</div>
                     </Link>
                     <Link
                       href="/stories"
-                      className="block px-4 py-3 body-medium text-text-dark-blue hover:text-primary hover:bg-gray-50 transition-colors"
+                      className="block px-4 py-3 hover:bg-gray-50 transition-colors"
                       onClick={closeBenefitsDropdown}
                     >
-                      Story – How Seattle Academy improved coordination
+                      <div className="body-medium text-text-dark-blue hover:text-primary">Story</div>
+                      <div className="body-small text-gray-500 mt-1">How Seattle Academy improved coordination</div>
                     </Link>
                   </div>
                 </div>
@@ -349,17 +351,19 @@ export default function Header() {
               <div className={`transition-all duration-200 ${isBenefitsDropdownOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0 overflow-hidden'}`}>
                 <Link
                   href="/benefits"
-                  className="block px-3 py-2 body-small text-text-dark-blue hover:text-primary hover:bg-gray-50 rounded-md transition-colors ml-4"
+                  className="block px-3 py-2 hover:bg-gray-50 rounded-md transition-colors ml-4"
                   onClick={closeMobileMenu}
                 >
-                  Benefits – What schools gain from SchoolCal
+                  <div className="body-small text-text-dark-blue hover:text-primary">Benefits</div>
+                  <div className="body-small text-gray-500 mt-1">What schools gain from SchoolCal</div>
                 </Link>
                 <Link
                   href="/stories"
-                  className="block px-3 py-2 body-small text-text-dark-blue hover:text-primary hover:bg-gray-50 rounded-md transition-colors ml-4"
+                  className="block px-3 py-2 hover:bg-gray-50 rounded-md transition-colors ml-4"
                   onClick={closeMobileMenu}
                 >
-                  Story – How Seattle Academy improved coordination
+                  <div className="body-small text-text-dark-blue hover:text-primary">Story</div>
+                  <div className="body-small text-gray-500 mt-1">How Seattle Academy improved coordination</div>
                 </Link>
               </div>
               <Link 

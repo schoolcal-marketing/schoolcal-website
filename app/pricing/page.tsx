@@ -1,6 +1,7 @@
 import { Metadata } from 'next'
 import PricingCalculator from "../components/PricingCalculator";
 import HubSpotForm from "../components/HubSpotForm";
+import CustomerStory from "../components/CustomerStory";
 
 export const metadata: Metadata = {
   title: 'Pricing - Get an Instant Estimate | SchoolCal',
@@ -27,8 +28,18 @@ export default function PricingPage() {
             </p>
           </div>
           
-          {/* Pricing Calculator */}
-          <PricingCalculator />
+          {/* Pricing Calculator and Customer Story - Two Column Layout */}
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            {/* Left Column - Pricing Calculator (2/3) */}
+            <div className="lg:col-span-2">
+              <PricingCalculator />
+            </div>
+            
+            {/* Right Column - Customer Story (1/3) */}
+            <div className="lg:col-span-1">
+              <CustomerStory />
+            </div>
+          </div>
         </div>
       </section>
 

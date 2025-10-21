@@ -75,7 +75,7 @@ export default function PricingCalculator() {
             <span className="bg-accent-blue text-text-black px-3 py-1 rounded-lg mx-1">
               ${annualCost.toLocaleString()}/year
             </span>
-            (${perStudentCost.toFixed(2)}/user) sync schedules all year.
+            (${perStudentCost.toFixed(2)}/user/year)
           </p>
         </div>
 

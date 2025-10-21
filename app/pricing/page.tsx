@@ -23,7 +23,7 @@ export default function PricingPage() {
               Get a ballpark estimate
             </h1>
             <p className="body-large text-text-dark-blue max-w-2xl mx-auto">
-              Sync class schedules to active users* (staff and student) calendars.
+              Sync class schedules to active users' (staff and student) calendars.
             </p>
           </div>
           
@@ -37,7 +37,7 @@ export default function PricingPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="heading-2 text-text-black mb-4">
-              Get a personalized estimate
+              Request a personalized estimate
             </h2>
             <p className="body-large text-text-dark-blue">
               Get exact pricing based on your exact school size and sync needs.

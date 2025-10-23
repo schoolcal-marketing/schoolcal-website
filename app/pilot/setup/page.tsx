@@ -57,8 +57,8 @@ export default function PilotSetupPage() {
           <h3 className="heading-3 text-text-black mb-4">
             We're setting up your pilot! Here's what happens next…
           </h3>
-          <p className="body-large text-text-dark-blue">
-            Once your account is ready, a SchoolCal team member will email you login instructions — usually within a few hours (8 AM–5 PM EST).
+          <p className="body-medium text-text-dark-blue">
+            Once your account is ready, a SchoolCal team member will email you login instructions - usually within a few hours (8 AM–5 PM EST).
           </p>
         </div>
         

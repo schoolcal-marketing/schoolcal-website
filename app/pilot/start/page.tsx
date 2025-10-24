@@ -244,6 +244,7 @@ function PilotSetupForm() {
         <label htmlFor="schoolWebsite" className="block body-medium text-text-black mb-2">
           School website address *
         </label>
+        <p className="body-small text-text-dark-blue mb-3">Include full URL with http prefix (e.g. https://myschool.edu).</p>
         <input
           type="url"
           id="schoolWebsite"
@@ -252,7 +253,7 @@ function PilotSetupForm() {
           className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-text-black ${
             errors.schoolWebsite ? 'border-red-500' : 'border-border'
           }`}
-          placeholder="https://www.yourschool.edu"
+          placeholder="https://www.myschool.edu"
           title="Please enter the full URL, e.g. https://example.com"
         />
         {errors.schoolWebsite && (
@@ -265,6 +266,9 @@ function PilotSetupForm() {
         <label htmlFor="allowedDomains" className="block body-medium text-text-black mb-2">
           Allowed domains *
         </label>
+        <p className="mt-1 body-small text-text-dark-blue mb-2">
+          List all domains you'll sync to (e.g. myschool.com, students.myschool.com).
+        </p>
         <input
           type="text"
           id="allowedDomains"
@@ -275,9 +279,6 @@ function PilotSetupForm() {
           }`}
           placeholder="myschool.com, students.myschool.com, faculty.myschool.com"
         />
-        <p className="mt-1 body-small text-text-dark-blue">
-          List all domains you'll sync to, e.g. myschool.com, students.myschool.com, faculty.myschool.com
-        </p>
         {errors.allowedDomains && (
           <p className="mt-1 body-small text-red-600">{errors.allowedDomains}</p>
         )}

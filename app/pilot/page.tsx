@@ -35,7 +35,7 @@ export default function Pilot() {
               Start a free pilot
             </h1>
             <p className="body-large text-text-dark-blue mb-8 max-w-3xl mx-auto">
-              <strong>Try SchoolCal free for 3-weeks</strong> and see how it can improve operations at your school. <strong>Setup usually takes less than 1 hour</strong> once you're granted access.
+              <strong>Try SchoolCal free for 3-weeks</strong> and see how it can improve operations at your school. <strong>Setup usually takes less than 1 hour</strong> once we've set up your account.
             </p>
             
             {/* Checkmark bullets */}
@@ -55,9 +55,12 @@ export default function Pilot() {
             </div>
             
             <div className="flex justify-center">
-              <button className="bg-primary text-white px-8 py-4 rounded-lg hover:bg-primary-dark transition-all duration-300 hover:scale-105 active:scale-95 font-medium body-large shadow-lg hover:shadow-xl">
-                Get Started
-              </button>
+              <Link 
+                href="/pilot/start"
+                className="bg-primary text-white px-8 py-4 rounded-lg hover:bg-primary-dark transition-all duration-300 hover:scale-105 active:scale-95 font-medium body-large shadow-lg hover:shadow-xl"
+              >
+                Start Your Pilot
+              </Link>
             </div>
           </div>
         </div>
@@ -163,6 +166,28 @@ export default function Pilot() {
               <cite className="body-small text-text-black font-semibold italic">
                 Columbia Grammar & Prep School
               </cite>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Get Started Section */}
+      <section className="py-20 bg-background-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <h2 className="heading-2 text-text-black mb-6">
+              Try a free test sync
+            </h2>
+            <p className="body-large text-text-dark-blue mb-8 max-w-3xl mx-auto">
+              Join hundreds of schools and get a free, 3-week pilot and see how SchoolCal can benefit your school. Try all features and pipelines without pressure or obligation.
+            </p>
+            <div className="flex justify-center">
+              <Link 
+                href="/pilot/start"
+                className="bg-primary text-white px-8 py-4 rounded-lg hover:bg-primary-dark transition-all duration-300 hover:scale-105 active:scale-95 font-medium body-large shadow-lg hover:shadow-xl"
+              >
+                Start Your Pilot
+              </Link>
             </div>
           </div>
         </div>

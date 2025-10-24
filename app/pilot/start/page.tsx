@@ -391,7 +391,7 @@ function PilotSetupForm() {
           </span>
         </label>
         <p className="mt-1 body-small text-text-dark-blue">
-          This pilot gives you free access to all SchoolCal features for three weeks. There's no obligation to purchase afterward. If {formData.schoolName || '[School Name]'} wants to continue using SchoolCal, a new agreement will be provided.
+          This pilot gives you <strong>free access to all SchoolCal features for three weeks.</strong> There's <strong>no obligation to purchase</strong> afterward. If {formData.schoolName || 'your school'} wants to continue using SchoolCal after that time, a new agreement will be provided.
         </p>
         {errors.pilotAgreementAccepted && (
           <p className="mt-1 body-small text-red-600">{errors.pilotAgreementAccepted}</p>

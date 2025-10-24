@@ -179,7 +179,7 @@ export default function Pilot() {
               Try a free test sync
             </h2>
             <p className="body-large text-text-dark-blue mb-8 max-w-3xl mx-auto">
-              Join hundreds of schools and get a free, 3-week pilot and see how SchoolCal can benefit your school. Try all features and pipelines without pressure or obligation.
+              Start your free, 3-week pilot to see how SchoolCal can benefit your school. Try all features and pipelines without pressure or obligation.
             </p>
             <div className="flex justify-center">
               <Link 

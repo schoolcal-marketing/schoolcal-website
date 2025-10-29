@@ -36,7 +36,7 @@ export default function PricingCalculator() {
     <div className="max-w-2xl mx-auto bg-background-white rounded-lg p-8 shadow-lg">
       <div className="text-center mb-8">
         <h3 className="heading-3 text-text-black mb-10">
-          School size: {studentCount.toLocaleString()} active users
+          School size: {studentCount.toLocaleString()} students
           <span className="ml-2 relative inline-block">
             <span 
               className="inline-flex items-center justify-center w-4 h-4 text-xs text-text-dark-blue cursor-help border border-text-dark-blue rounded-full hover:bg-text-dark-blue hover:text-white transition-colors"
@@ -89,7 +89,7 @@ export default function PricingCalculator() {
         </div>
 
         <p className="body-small text-text-dark-blue">
-          Less than 700 or more than 5,000 users? Contact us for pricing.
+          Less than 700 or more than 5,000 students? Contact us for pricing.
         </p>
       </div>
     </div>

@@ -24,7 +24,7 @@ export default function PricingPage() {
               Get a ballpark estimate
             </h1>
             <p className="body-large text-text-dark-blue max-w-2xl mx-auto">
-              Sync class schedules to active users' (staff and student) calendars.
+              Get a rough estimate for syncing class schedules to staff and student calendars. Additional pipelines (events, resources, etc.) cost extra.
             </p>
           </div>
           

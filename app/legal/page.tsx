@@ -40,6 +40,11 @@ const legalPages = [
     title: 'Subprocessors',
     href: '/legal/subprocessors',
     description: 'List of third-party subprocessors that SchoolCal uses to provide our services.'
+  },
+  {
+    title: 'Free Pilot Agreement',
+    href: '/legal/pilot-agreement',
+    description: 'This pilot agreement is to use SchoolCal for free for three weeks without pay. There is no agreement beyond the three weeks.'
   }
 ]
 

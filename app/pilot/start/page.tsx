@@ -360,18 +360,18 @@ function PilotSetupForm() {
           />
           <span className="ml-3 body-medium text-text-black">
             I agree to the{' '}
-            <Link href="/legal/service-agreement" className="text-primary hover:text-primary-dark underline">
+            <a href="/legal/service-agreement" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary-dark underline">
               terms of service
-            </Link>
+            </a>
             {' '}&{' '}
-            <Link href="/legal/privacy-policy" className="text-primary hover:text-primary-dark underline">
+            <a href="/legal/privacy-policy" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary-dark underline">
               privacy policy
-            </Link>
+            </a>
             {' '}*
           </span>
         </label>
         <p className="mt-1 body-small text-text-dark-blue">
-          We take great care to protect your data and keep it secure.
+          Our reputation is important to us. We'll never sell or share your data with third parties, and take great care to protect it.
         </p>
         {errors.termsAccepted && (
           <p className="mt-1 body-small text-red-600">{errors.termsAccepted}</p>
@@ -388,7 +388,7 @@ function PilotSetupForm() {
             className="w-4 h-4 text-primary border-border rounded focus:ring-primary mt-1"
           />
           <span className="ml-3 body-medium text-text-black">
-            I understand and accept the Pilot Agreement *
+            I understand and accept the <a href="/legal/pilot-agreement" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary-dark underline">Pilot Agreement</a> *
           </span>
         </label>
         <p className="mt-1 body-small text-text-dark-blue">

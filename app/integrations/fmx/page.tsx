@@ -561,12 +561,20 @@ export default function FMXIntegrationPage() {
           <p className="body-large text-white/90 mb-8 max-w-2xl mx-auto">
             Book a personalized demo, or watch a quick overview to see how it works.
           </p>
-          <a 
-            href="/demo" 
-            className="bg-primary text-white px-8 py-4 rounded-lg hover:bg-primary-dark transition-all duration-300 hover:scale-105 active:scale-95 font-medium body-large shadow-lg hover:shadow-xl"
-          >
-            Book a Demo
-          </a>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a 
+              href="/demo" 
+              className="bg-transparent text-white border border-white px-8 py-4 rounded-lg hover:bg-white/10 transition-all duration-300 hover:scale-105 active:scale-95 font-medium body-large shadow-lg hover:shadow-xl"
+            >
+              Book a Demo
+            </a>
+            <a 
+              href="/pilot" 
+              className="bg-primary text-white px-8 py-4 rounded-lg hover:bg-primary-dark transition-all duration-300 hover:scale-105 active:scale-95 font-medium body-large shadow-lg hover:shadow-xl"
+            >
+              Start Free Pilot
+            </a>
+          </div>
         </div>
       </section>
     </div>

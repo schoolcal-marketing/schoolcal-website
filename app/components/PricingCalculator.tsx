@@ -80,12 +80,20 @@ export default function PricingCalculator() {
         </div>
 
         <div className="mb-6">
-          <Link 
-            href="/demo" 
-            className="bg-primary text-white px-8 py-4 rounded-lg hover:bg-primary-dark transition-all duration-300 hover:scale-105 active:scale-95 font-medium body-large shadow-lg hover:shadow-xl inline-block"
-          >
-            Book a Demo
-          </Link>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link 
+              href="/demo" 
+              className="bg-transparent text-primary border border-primary px-8 py-4 rounded-lg hover:bg-primary/10 transition-all duration-300 hover:scale-105 active:scale-95 font-medium body-large shadow-lg hover:shadow-xl"
+            >
+              Book a Demo
+            </Link>
+            <Link 
+              href="/pilot" 
+              className="bg-primary text-white px-8 py-4 rounded-lg hover:bg-primary-dark transition-all duration-300 hover:scale-105 active:scale-95 font-medium body-large shadow-lg hover:shadow-xl"
+            >
+              Start Free Pilot
+            </Link>
+          </div>
         </div>
 
         <p className="body-small text-text-dark-blue">

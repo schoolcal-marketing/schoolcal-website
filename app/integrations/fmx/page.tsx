@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import Image from "next/image"
+import HubSpotAPIForm from '../../components/HubSpotAPIForm'
 import CustomXIcon from '../../components/CustomXIcon';
 import CustomCheckIcon from '../../components/CustomCheckIcon';
 import { 
@@ -47,6 +48,9 @@ export default function FMXIntegrationPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <div className="max-w-4xl mx-auto">
+              <div className="inline-block bg-[#FEEAAE] text-text-black px-4 py-2 rounded-full text-sm font-medium mb-6">
+                <strong>Join the Beta</strong>: Get early & discounted access to the FMX integration.
+              </div>
               <h1 className="heading-display text-text-black mb-6">
               Sync FMX data to Google or Outlook calendars
               </h1>
@@ -54,12 +58,15 @@ export default function FMXIntegrationPage() {
                 Automatically sync event data from FMX to general calendars in Google or Outlook.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-                <a 
-                  href="/demo" 
-                  className="bg-primary text-white px-8 py-4 rounded-lg hover:bg-primary-dark transition-all duration-300 hover:scale-105 active:scale-95 font-medium body-large shadow-lg hover:shadow-xl"
-                >
-                  Book a Demo
-                </a>
+                <div className="max-w-md mx-auto">
+                  <HubSpotAPIForm 
+                    portalId="21668382" 
+                    formId="ae302cdc-7608-4722-959c-fda688452fd4"
+                    buttonText="Join Beta"
+                    placeholder="sarah@myschool.com"
+                    successMessage="You're on the list! We'll be in touch soon."
+                  />
+                </div>
               </div>
             </div>
             

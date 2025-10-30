@@ -1,6 +1,7 @@
 import { Metadata } from 'next'
 import Link from "next/link";
 import CustomCheckIcon from "../components/CustomCheckIcon";
+import Image from 'next/image'
 
 export const metadata: Metadata = {
   title: 'Start a Free Pilot - SchoolCal',
@@ -35,7 +36,7 @@ export default function Pilot() {
               Start a free pilot
             </h1>
             <p className="body-large text-text-dark-blue mb-8 max-w-3xl mx-auto">
-              <strong>Try SchoolCal free for 3-weeks</strong> and see how it can improve operations at your school. <strong>Setup usually takes less than 1 hour</strong> once we've set up your account.
+              <strong>Try SchoolCal free for 3-weeks</strong> and see how it can improve operations at your school. <strong>Setup usually takes less than 30 minutes</strong> once we've set up your account.
             </p>
             
             {/* Checkmark bullets */}
@@ -98,7 +99,7 @@ export default function Pilot() {
                   <span className="text-xl font-bold text-text-black">2</span>
                 </div>
                 <h3 className="heading-3 text-text-black">
-                  Onboard (Less than 1 hour)
+                  Onboard (Less than 30 minutes)
                 </h3>
               </div>
               <p className="body-medium text-text-dark-blue">
@@ -144,7 +145,10 @@ export default function Pilot() {
                 "Sometimes you get solutions that cause many more problems than they're worth. That is definitely not the case with SchoolCal. <span className="bg-accent-vanilla px-1 rounded">It just works. It's easy to maintain.</span> Once I get it configured, it's really a <span className="bg-accent-vanilla px-1 rounded">'set it and forget it' sort of scenario</span>."
               </blockquote>
               <cite className="body-small text-text-black font-semibold italic">
-                Willy Felton, Director of Information Technology at Seattle Academy
+                <span className="flex items-center gap-3">
+                  <Image src="/logos/customer-seattle-academy-square.jpeg" alt="Seattle Academy logo" width={32} height={32} className="rounded-full object-cover w-8 h-8" />
+                  <span>Willy Felton, Director of Information Technology at Seattle Academy</span>
+                </span>
               </cite>
             </div>
 
@@ -154,7 +158,10 @@ export default function Pilot() {
                 "From <span className="bg-accent-vanilla px-1 rounded">super fast and smooth onboarding to flawless daily sync</span>, it's been <span className="bg-accent-vanilla px-1 rounded">'set it and forget it'. It just works.</span> We weren't sure if it would be worth the money but <span className="bg-accent-vanilla px-1 rounded">it provides a tremendous value to our community</span> to see schedules and availability of others in one place without any manual effort."
               </blockquote>
               <cite className="body-small text-text-black font-semibold italic">
-                Kevin Warenda, Director of Information Technology at The Hotchkiss School
+                <span className="flex items-center gap-3">
+                  <Image src="/logos/customer-hotchkiss-square.jpeg" alt="The Hotchkiss School logo" width={32} height={32} className="rounded-full object-cover w-8 h-8" />
+                  <span>Kevin Warenda, Director of Information Technology at The Hotchkiss School</span>
+                </span>
               </cite>
             </div>
 
@@ -164,7 +171,10 @@ export default function Pilot() {
                 "SchoolCal is a <span className="bg-accent-vanilla px-1 rounded">game changer</span> for us. It was <span className="bg-accent-vanilla px-1 rounded">easy to set up, easy to manage</span> and <span className="bg-accent-vanilla px-1 rounded">solved an essential problem for us.</span>"
               </blockquote>
               <cite className="body-small text-text-black font-semibold italic">
-                Columbia Grammar & Prep School
+                <span className="flex items-center gap-3">
+                  <Image src="/logos/customer-columbia-grammar-square.jpeg" alt="Columbia Grammar & Preparatory School logo" width={32} height={32} className="rounded-full object-cover w-8 h-8" />
+                  <span>Columbia Grammar & Prep School</span>
+                </span>
               </cite>
             </div>
           </div>

@@ -229,8 +229,8 @@ export default function Header() {
           {/* Desktop CTA Buttons */}
           <div className="hidden lg:flex items-center space-x-4">
             <Link 
-              href="https://go.schoolcal.co/" 
-              className="body-medium text-text-dark-blue hover:text-primary transition-colors"
+              href="https://app.schoolcal.com/" 
+              className="body-medium text-text-dark-blue hover:text-primary transition-colors underline"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -238,9 +238,15 @@ export default function Header() {
             </Link>
             <Link 
               href="/demo" 
+              className="bg-transparent border border-primary text-primary px-4 py-2 rounded-lg hover:bg-primary/10 transition-colors body-medium"
+            >
+              Book a Demo
+            </Link>
+            <Link 
+              href="/pilot" 
               className="bg-primary text-white px-4 py-2 rounded-lg hover:bg-primary-dark transition-colors body-medium"
             >
-              Book Demo
+              Start Free Pilot
             </Link>
           </div>
 
@@ -391,8 +397,8 @@ export default function Header() {
               {/* Mobile CTA Buttons */}
               <div className="pt-4 pb-3 border-t border-gray-200">
                 <Link 
-                  href="https://go.schoolcal.co/" 
-                  className="block px-3 py-2 body-medium text-text-dark-blue hover:text-primary hover:bg-gray-50 rounded-md transition-colors"
+                  href="https://app.schoolcal.com/" 
+                className="block px-3 py-2 body-medium text-text-dark-blue hover:text-primary hover:bg-gray-50 rounded-md transition-colors underline"
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={closeMobileMenu}
@@ -401,10 +407,17 @@ export default function Header() {
                 </Link>
                 <Link 
                   href="/demo" 
-                  className="block mt-2 mx-3 bg-primary text-white px-4 py-2 rounded-lg hover:bg-primary-dark transition-colors body-medium text-center"
+                className="block mt-2 mx-3 bg-transparent border border-primary text-primary px-4 py-2 rounded-lg hover:bg-primary/10 transition-colors body-medium text-center"
                   onClick={closeMobileMenu}
                 >
-                  Book Demo
+                Book a Demo
+              </Link>
+              <Link 
+                href="/pilot" 
+                className="block mt-2 mx-3 bg-primary text-white px-4 py-2 rounded-lg hover:bg-primary-dark transition-colors body-medium text-center"
+                onClick={closeMobileMenu}
+              >
+                Start Free Pilot
                 </Link>
               </div>
             </div>

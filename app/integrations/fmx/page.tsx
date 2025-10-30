@@ -74,7 +74,7 @@ export default function FMXIntegrationPage() {
             <div className="max-w-7xl mx-auto">
               <div className="relative">
                 <Image
-                  src="/images/homepage-hero.png"
+                  src="/images/fmx-hero.png"
                   alt="SchoolCal calendar interface showing schedule management and availability features"
                   width={1200}
                   height={800}

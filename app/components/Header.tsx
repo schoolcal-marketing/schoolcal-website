@@ -151,6 +151,18 @@ export default function Header() {
                         </span>
                       </div>
                     </Link>
+                    <Link
+                      href="/integrations/fmx"
+                      className="block px-4 py-3 body-medium text-text-dark-blue hover:text-primary hover:bg-gray-50 transition-colors"
+                      onClick={closeProductDropdown}
+                    >
+                      <div className="flex items-center justify-between">
+                        <span>For FMX</span>
+                        <span className="bg-[#FEEAAE] text-text-black px-2 py-1 rounded-full text-xs font-medium">
+                          Join Beta
+                        </span>
+                      </div>
+                    </Link>
                   </div>
                 </div>
                 </>
@@ -332,6 +344,18 @@ export default function Header() {
                 >
                   <div className="flex items-center justify-between">
                     <span>For Infinite Campus</span>
+                    <span className="bg-[#FEEAAE] text-text-black px-2 py-1 rounded-full text-xs font-medium">
+                      Join Beta
+                    </span>
+                  </div>
+                </Link>
+                <Link
+                  href="/integrations/fmx"
+                  className="block px-3 py-2 body-small text-text-dark-blue hover:text-primary hover:bg-gray-50 rounded-md transition-colors ml-4"
+                  onClick={closeMobileMenu}
+                >
+                  <div className="flex items-center justify-between">
+                    <span>For FMX</span>
                     <span className="bg-[#FEEAAE] text-text-black px-2 py-1 rounded-full text-xs font-medium">
                       Join Beta
                     </span>

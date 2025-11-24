@@ -69,22 +69,6 @@ export default function SubprocessorsPage() {
                   </p>
                 </div>
 
-                {/* SEED */}
-                <div className="border border-border rounded-lg p-6 bg-background-cream">
-                  <h3 className="heading-3 text-text-black mb-3">SEED (by Anomaly Innovations)</h3>
-                  <p className="body-medium text-text-dark-blue">
-                    Used for application development. Log records may include customer data.
-                  </p>
-                </div>
-
-                {/* Vercel */}
-                <div className="border border-border rounded-lg p-6 bg-background-cream">
-                  <h3 className="heading-3 text-text-black mb-3">Vercel</h3>
-                  <p className="body-medium text-text-dark-blue">
-                    Used for application development and deployment.
-                  </p>
-                </div>
-
                 {/* Sentry */}
                 <div className="border border-border rounded-lg p-6 bg-background-cream">
                   <h3 className="heading-3 text-text-black mb-3">Sentry</h3>

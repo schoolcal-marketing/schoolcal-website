@@ -569,12 +569,54 @@ export default function PrivacyPolicyPage() {
 
               <div>
                 <h2 className="heading-2 text-text-black mb-4">Children's Privacy</h2>
+                
                 <p className="body-medium text-text-dark-blue mb-4">
-                  Our Service does not address anyone under the age of 13. We do not knowingly collect personally identifiable information from anyone under the age of 13. If You are a parent or guardian and You are aware that Your child has provided Us with Personal Data, please contact Us. If We become aware that We have collected Personal Data from anyone under the age of 13 without verification of parental consent, We take steps to remove that information from Our servers.
+                  SchoolCal provides calendar synchronization services to educational institutions. We do not market to or knowingly collect personal information directly from children under the age of 13.
                 </p>
-                <p className="body-medium text-text-dark-blue">
-                  If We need to rely on consent as a legal basis for processing Your information and Your country requires consent from a parent, We may require Your parent's consent before We collect and use that information.
-                </p>
+
+                <div className="mb-4">
+                  <h3 className="heading-3 text-text-black mb-3">Information Collected on Behalf of Schools:</h3>
+                  <p className="body-medium text-text-dark-blue mb-3">
+                    When schools use our Service to synchronize schedules for students under 13, we may process the following information as a service provider on behalf of the school:
+                  </p>
+                  <ul className="list-disc list-inside ml-6 space-y-2">
+                    <li className="body-medium text-text-dark-blue">Name</li>
+                    <li className="body-medium text-text-dark-blue">Email address</li>
+                    <li className="body-medium text-text-dark-blue">Date of birth (in some cases)</li>
+                    <li className="body-medium text-text-dark-blue">Class schedule information</li>
+                  </ul>
+                  <p className="body-medium text-text-dark-blue mt-3">
+                    This information is collected and processed solely to provide the calendar synchronization services requested by the educational institution.
+                  </p>
+                </div>
+
+                <div className="mb-4">
+                  <h3 className="heading-3 text-text-black mb-3">No Marketing to Students or Parents:</h3>
+                  <p className="body-medium text-text-dark-blue">
+                    SchoolCal does not use student or parent information for marketing of any kind. We do not contact students or parents directly, and we do not share their information with third parties for marketing purposes. Any data we receive from schools is used exclusively to operate and support the calendar synchronization services.
+                  </p>
+                </div>
+
+                <div className="mb-4">
+                  <h3 className="heading-3 text-text-black mb-3">FERPA and School Authority:</h3>
+                  <p className="body-medium text-text-dark-blue">
+                    We rely on schools to obtain any necessary parental consents and to comply with applicable laws, including the Family Educational Rights and Privacy Act (FERPA) and the Children's Online Privacy Protection Act (COPPA). Schools are responsible for ensuring they have the legal authority to share student information with us for the purpose of providing our services.
+                  </p>
+                </div>
+
+                <div className="mb-4">
+                  <h3 className="heading-3 text-text-black mb-3">Parental Rights:</h3>
+                  <p className="body-medium text-text-dark-blue">
+                    Parents or guardians who wish to review, update, or delete their child's information should contact their child's school directly, as the school controls this data. We will cooperate with schools to fulfill such requests in accordance with our service agreement.
+                  </p>
+                </div>
+
+                <div>
+                  <h3 className="heading-3 text-text-black mb-3">Our Role:</h3>
+                  <p className="body-medium text-text-dark-blue">
+                    We act as a service provider to schools and process student information only as directed by the educational institution and as necessary to provide our calendar synchronization services.
+                  </p>
+                </div>
               </div>
 
               <div>

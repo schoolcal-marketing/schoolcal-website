@@ -1,6 +1,5 @@
 import { Metadata } from 'next'
 import Image from "next/image"
-import HubSpotAPIForm from '../../components/HubSpotAPIForm'
 import CustomXIcon from '../../components/CustomXIcon';
 import CustomCheckIcon from '../../components/CustomCheckIcon';
 import { 
@@ -49,7 +48,7 @@ export default function FMXIntegrationPage() {
           <div className="text-center">
             <div className="max-w-4xl mx-auto">
               <div className="inline-block bg-[#FEEAAE] text-text-black px-4 py-2 rounded-full text-sm font-medium mb-6">
-                <strong>Join the Beta</strong>: Get early & discounted access to the FMX integration.
+                <strong>Early Adopter Offer</strong>: Get the integration for Spring 2026 for $500. Buy before Jan 1, 2026 to waive the $250 setup fee.
               </div>
               <h1 className="heading-display text-text-black mb-6">
               Sync FMX data to Google or Outlook calendars
@@ -58,15 +57,12 @@ export default function FMXIntegrationPage() {
                 Automatically sync event data from FMX to general calendars in Google or Outlook.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-                <div className="max-w-md mx-auto">
-                  <HubSpotAPIForm 
-                    portalId="21668382" 
-                    formId="ae302cdc-7608-4722-959c-fda688452fd4"
-                    buttonText="Join Beta"
-                    placeholder="sarah@myschool.com"
-                    successMessage="You're on the list! We'll be in touch soon."
-                  />
-                </div>
+                <a 
+                  href="/demo" 
+                  className="bg-primary text-white px-8 py-4 rounded-lg hover:bg-primary-dark transition-all duration-300 hover:scale-105 active:scale-95 font-medium body-large shadow-lg hover:shadow-xl"
+                >
+                  Book a Call
+                </a>
               </div>
             </div>
             
@@ -98,6 +94,7 @@ export default function FMXIntegrationPage() {
           
           {/* Logo Grid */}
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 items-center justify-items-center">
+            
             {/* Customer Logo 1 */}
             <div className="w-40 h-20 bg-background-white rounded-lg flex items-center justify-center border border-border-dark shadow-sm p-4">
               <Image

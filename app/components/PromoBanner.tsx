@@ -5,7 +5,7 @@ import Link from "next/link";
 import { X } from "lucide-react";
 
 export default function PromoBanner() {
-  const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
 
   // Update this version when you change the banner content
   const BANNER_VERSION = "rebrand-promo-1";
@@ -31,13 +31,13 @@ export default function PromoBanner() {
         {/* Centered Content Group */}
         <div className="flex-1 flex items-center justify-center gap-4">
           <p className="text-sm sm:text-base font-medium text-center">
-            New SchoolCal look: same app, fresh brand. See how we’re advancing our mission.
+            New: Sync FMX data to resource calendars.
           </p>
           <Link
-            href="/articles/rebrand"
+            href="/integrations/fmx"
             className="bg-white text-text-dark-blue px-4 py-2 rounded-lg text-sm font-medium hover:bg-gray-100 transition-colors whitespace-nowrap"
           >
-            Read Article
+            Learn More
           </Link>
         </div>
 

@@ -3,15 +3,6 @@ import Image from "next/image"
 import CustomXIcon from '../../components/CustomXIcon';
 import CustomCheckIcon from '../../components/CustomCheckIcon';
 import { 
-  BookOpen, 
-  Trophy, 
-  Users, 
-  UserCheck, 
-  Calendar, 
-  RotateCcw, 
-  Gift,
-  Calendar as CalendarIcon,
-  Mail,
   ChevronDown
 } from 'lucide-react'
 
@@ -169,8 +160,14 @@ export default function PowerSchoolIntegrationPage() {
                     className="w-full p-6 text-left flex items-center justify-between transition-colors cursor-pointer"
                   >
                     <div className="flex items-center gap-4">
-                      <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
-                        <BookOpen className="w-6 h-6 text-primary" />
+                      <div className="w-12 h-12 rounded-lg overflow-hidden">
+                        <Image
+                          src="/logos/powerschool-square.png"
+                          alt="PowerSchool logo"
+                          width={48}
+                          height={48}
+                          className="w-full h-full object-cover"
+                        />
                       </div>
                       <h3 className="heading-3 text-text-black">
                         Class Schedules
@@ -193,8 +190,14 @@ export default function PowerSchoolIntegrationPage() {
                     className="w-full p-6 text-left flex items-center justify-between transition-colors cursor-pointer"
                   >
                     <div className="flex items-center gap-4">
-                      <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
-                        <Calendar className="w-6 h-6 text-primary" />
+                      <div className="w-12 h-12 rounded-lg overflow-hidden">
+                        <Image
+                          src="/logos/powerschool-square.png"
+                          alt="PowerSchool logo"
+                          width={48}
+                          height={48}
+                          className="w-full h-full object-cover"
+                        />
                       </div>
                       <h3 className="heading-3 text-text-black">
                         Resource Calendars
@@ -218,8 +221,14 @@ export default function PowerSchoolIntegrationPage() {
                     className="w-full p-6 text-left flex items-center justify-between transition-colors cursor-pointer"
                   >
                     <div className="flex items-center gap-4">
-                      <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
-                        <RotateCcw className="w-6 h-6 text-primary" />
+                      <div className="w-12 h-12 rounded-lg overflow-hidden">
+                        <Image
+                          src="/logos/powerschool-square.png"
+                          alt="PowerSchool logo"
+                          width={48}
+                          height={48}
+                          className="w-full h-full object-cover"
+                        />
                       </div>
                       <h3 className="heading-3 text-text-black">
                         Rotation Days
@@ -242,8 +251,14 @@ export default function PowerSchoolIntegrationPage() {
                     className="w-full p-6 text-left flex items-center justify-between transition-colors cursor-pointer"
                   >
                     <div className="flex items-center gap-4">
-                      <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
-                        <Gift className="w-6 h-6 text-primary" />
+                      <div className="w-12 h-12 rounded-lg overflow-hidden">
+                        <Image
+                          src="/logos/powerschool-square.png"
+                          alt="PowerSchool logo"
+                          width={48}
+                          height={48}
+                          className="w-full h-full object-cover"
+                        />
                       </div>
                       <h3 className="heading-3 text-text-black">
                         Birthday Calendars

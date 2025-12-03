@@ -169,13 +169,13 @@ export default function FMXIntegrationPage() {
                     className="w-full p-6 text-left flex items-center justify-between transition-colors cursor-pointer"
                   >
                     <div className="flex items-center gap-4">
-                      <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+                      <div className="w-12 h-12 rounded-lg overflow-hidden">
                         <Image
                           src="/logos/fmx-square.png"
                           alt="FMX logo"
-                          width={24}
-                          height={24}
-                          className="w-6 h-6"
+                          width={48}
+                          height={48}
+                          className="w-full h-full object-cover"
                         />
                       </div>
                       <h3 className="heading-3 text-text-black">
@@ -199,13 +199,13 @@ export default function FMXIntegrationPage() {
                     className="w-full p-6 text-left flex items-center justify-between transition-colors cursor-pointer"
                   >
                     <div className="flex items-center gap-4">
-                      <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+                      <div className="w-12 h-12 rounded-lg overflow-hidden">
                         <Image
                           src="/logos/fmx-square.png"
                           alt="FMX logo"
-                          width={24}
-                          height={24}
-                          className="w-6 h-6"
+                          width={48}
+                          height={48}
+                          className="w-full h-full object-cover"
                         />
                       </div>
                       <h3 className="heading-3 text-text-black">
@@ -229,13 +229,13 @@ export default function FMXIntegrationPage() {
                     className="w-full p-6 text-left flex items-center justify-between transition-colors cursor-pointer"
                   >
                     <div className="flex items-center gap-4">
-                      <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+                      <div className="w-12 h-12 rounded-lg overflow-hidden">
                         <Image
                           src="/logos/fmx-square.png"
                           alt="FMX logo"
-                          width={24}
-                          height={24}
-                          className="w-6 h-6"
+                          width={48}
+                          height={48}
+                          className="w-full h-full object-cover"
                         />
                       </div>
                       <h3 className="heading-3 text-text-black">
@@ -259,13 +259,13 @@ export default function FMXIntegrationPage() {
                     className="w-full p-6 text-left flex items-center justify-between transition-colors cursor-pointer"
                   >
                     <div className="flex items-center gap-4">
-                      <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+                      <div className="w-12 h-12 rounded-lg overflow-hidden">
                         <Image
                           src="/logos/fmx-square.png"
                           alt="FMX logo"
-                          width={24}
-                          height={24}
-                          className="w-6 h-6"
+                          width={48}
+                          height={48}
+                          className="w-full h-full object-cover"
                         />
                       </div>
                       <h3 className="heading-3 text-text-black">

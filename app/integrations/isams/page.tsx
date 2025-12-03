@@ -4,15 +4,6 @@ import HubSpotAPIForm from '../../components/HubSpotAPIForm'
 import CustomXIcon from '../../components/CustomXIcon';
 import CustomCheckIcon from '../../components/CustomCheckIcon';
 import { 
-  BookOpen, 
-  Trophy, 
-  Users, 
-  UserCheck, 
-  Calendar, 
-  RotateCcw, 
-  Gift,
-  Calendar as CalendarIcon,
-  Mail,
   ChevronDown
 } from 'lucide-react'
 
@@ -171,8 +162,14 @@ export default function iSAMSIntegrationPage() {
                     className="w-full p-6 text-left flex items-center justify-between transition-colors cursor-pointer"
                   >
                     <div className="flex items-center gap-4">
-                      <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
-                        <BookOpen className="w-6 h-6 text-primary" />
+                      <div className="w-12 h-12 rounded-lg overflow-hidden">
+                        <Image
+                          src="/logos/isams-square.png"
+                          alt="iSAMS logo"
+                          width={48}
+                          height={48}
+                          className="w-full h-full object-cover"
+                        />
                       </div>
                       <h3 className="heading-3 text-text-black">
                         Class Schedules
@@ -195,8 +192,14 @@ export default function iSAMSIntegrationPage() {
                     className="w-full p-6 text-left flex items-center justify-between transition-colors cursor-pointer"
                   >
                     <div className="flex items-center gap-4">
-                      <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
-                        <RotateCcw className="w-6 h-6 text-primary" />
+                      <div className="w-12 h-12 rounded-lg overflow-hidden">
+                        <Image
+                          src="/logos/isams-square.png"
+                          alt="iSAMS logo"
+                          width={48}
+                          height={48}
+                          className="w-full h-full object-cover"
+                        />
                       </div>
                       <h3 className="heading-3 text-text-black">
                         Rotation Days

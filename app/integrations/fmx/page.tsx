@@ -51,7 +51,7 @@ export default function FMXIntegrationPage() {
                 <strong>Early Adopter Offer</strong>: Get the integration for Spring 2026 for $500. Buy before Jan 1, 2026 to waive the $250 setup fee.
               </div>
               <h1 className="heading-display text-text-black mb-6">
-              Sync FMX data to Google or Outlook calendars
+              Sync FMX data to Google or Outlook resource calendars
               </h1>
               <p className="max-w-2xl mx-auto body-large text-text-dark-blue mb-8">
                 Automatically sync event data from FMX to general calendars in Google or Outlook.
@@ -400,7 +400,7 @@ export default function FMXIntegrationPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="heading-2 text-text-black mb-8">
-              Sync FMX data, effortlessly
+              Maximum control, minimum maintenance
             </h2>
             
             {/* Testimonial */}

@@ -350,7 +350,7 @@ export default function iSAMSIntegrationPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="heading-2 text-text-black mb-8">
-              Sync iSAMS data, effortlessly
+              Maximum control, minimum maintenance
             </h2>
             
             {/* Testimonial */}

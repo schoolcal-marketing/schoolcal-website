@@ -3,10 +3,6 @@ import Image from "next/image"
 import CustomXIcon from '../../components/CustomXIcon';
 import CustomCheckIcon from '../../components/CustomCheckIcon';
 import { 
-  BookOpen,
-  Bus,
-  Wrench,
-  ClipboardList,
   ChevronDown
 } from 'lucide-react'
 
@@ -174,7 +170,13 @@ export default function FMXIntegrationPage() {
                   >
                     <div className="flex items-center gap-4">
                       <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
-                        <BookOpen className="w-6 h-6 text-primary" />
+                        <Image
+                          src="/logos/fmx-square.png"
+                          alt="FMX logo"
+                          width={24}
+                          height={24}
+                          className="w-6 h-6"
+                        />
                       </div>
                       <h3 className="heading-3 text-text-black">
                         Schedule Requests
@@ -198,7 +200,13 @@ export default function FMXIntegrationPage() {
                   >
                     <div className="flex items-center gap-4">
                       <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
-                        <Bus className="w-6 h-6 text-primary" />
+                        <Image
+                          src="/logos/fmx-square.png"
+                          alt="FMX logo"
+                          width={24}
+                          height={24}
+                          className="w-6 h-6"
+                        />
                       </div>
                       <h3 className="heading-3 text-text-black">
                         Transportation Requests
@@ -222,7 +230,13 @@ export default function FMXIntegrationPage() {
                   >
                     <div className="flex items-center gap-4">
                       <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
-                        <Wrench className="w-6 h-6 text-primary" />
+                        <Image
+                          src="/logos/fmx-square.png"
+                          alt="FMX logo"
+                          width={24}
+                          height={24}
+                          className="w-6 h-6"
+                        />
                       </div>
                       <h3 className="heading-3 text-text-black">
                         Work Requests
@@ -246,7 +260,13 @@ export default function FMXIntegrationPage() {
                   >
                     <div className="flex items-center gap-4">
                       <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
-                        <ClipboardList className="w-6 h-6 text-primary" />
+                        <Image
+                          src="/logos/fmx-square.png"
+                          alt="FMX logo"
+                          width={24}
+                          height={24}
+                          className="w-6 h-6"
+                        />
                       </div>
                       <h3 className="heading-3 text-text-black">
                         Work Tasks

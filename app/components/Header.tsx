@@ -159,7 +159,7 @@ export default function Header() {
                       <div className="flex items-center justify-between">
                         <span>For FMX</span>
                         <span className="bg-[#FEEAAE] text-text-black px-2 py-1 rounded-full text-xs font-medium">
-                          Beta
+                          New!
                         </span>
                       </div>
                     </Link>
@@ -357,7 +357,7 @@ export default function Header() {
                   <div className="flex items-center justify-between">
                     <span>For FMX</span>
                     <span className="bg-[#FEEAAE] text-text-black px-2 py-1 rounded-full text-xs font-medium">
-                      Beta
+                      New!
                     </span>
                   </div>
                 </Link>

@@ -18,33 +18,23 @@ export default function PricingPage() {
     <div className="min-h-screen bg-background-white">
       {/* Hero Section */}
       <section className="bg-background-cream py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h1 className="heading-1 text-text-black mb-4">
-              Get an estimate
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-8">
+            <h1 className="heading-1 text-text-black mb-2">
+              Starting at
             </h1>
-            <p className="body-large text-text-dark-blue max-w-2xl mx-auto">
-              Get a rough estimate for syncing class schedules to staff and student calendars. Additional pipelines (events, resources, etc.) cost extra.
-            </p>
           </div>
           
-          {/* Pricing Calculator and Customer Story - Two Column Layout */}
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            {/* Left Column - Pricing Calculator (2/3) */}
-            <div className="lg:col-span-2">
-              <PricingCalculator />
-            </div>
-            
-            {/* Right Column - Customer Story (1/3) */}
-            <div className="lg:col-span-1">
-              <CustomerStory />
-            </div>
+          {/* Single Column Layout */}
+          <div className="space-y-12">
+            <PricingCalculator />
+            <CustomerStory />
           </div>
         </div>
       </section>
 
       {/* Request Quote Section */}
-      <section className="bg-background-cream py-20">
+      <section className="bg-background-cream pt-8 pb-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="heading-2 text-text-black mb-4">

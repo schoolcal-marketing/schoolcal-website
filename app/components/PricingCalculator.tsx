@@ -24,8 +24,8 @@ export default function PricingCalculator() {
   const studentCount = isMaxStep ? maxStudents : sliderValue;
   const displayStudentCount = isMaxStep ? "2,500+" : studentCount.toLocaleString();
   
-  // Calculate cost: $3 per student, or "Contact us" for 2500+
-  const annualCost = isMaxStep ? null : calculatePublicCost(studentCount);
+  // Calculate cost: $3 per student
+  const annualCost = calculatePublicCost(studentCount);
 
   return (
     <div className="text-center space-y-8">

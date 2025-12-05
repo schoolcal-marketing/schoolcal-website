@@ -21,7 +21,7 @@ export default function PricingPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h1 className="heading-1 text-text-black mb-4">
-              Get a ballpark estimate
+              Get an estimate
             </h1>
             <p className="body-large text-text-dark-blue max-w-2xl mx-auto">
               Get a rough estimate for syncing class schedules to staff and student calendars. Additional pipelines (events, resources, etc.) cost extra.
